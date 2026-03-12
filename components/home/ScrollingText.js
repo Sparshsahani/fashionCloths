@@ -1,10 +1,10 @@
 'use client';
 
 export default function ScrollingText() {
-  const text = "Designer Cloths • Trendy Styles • Best Fabrics • Perfect Fit • ";
+  const text = "Stylish Apparel • Trendy Outfits • Quality Fabrics • Latest Fashion • ";
   
   return (
-    <section data-aos="fade" className="relative bg-[var(--primary)] overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]">
+    <section data-aos="fade" className="relative bg-[var(--white)] overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]">
       {/* subtle light overlay to slightly darken the background color */}
       <div className="absolute inset-0 bg-black/10 z-0"></div>
       <div className="relative z-10 flex items-center min-h-[280px] md:min-h-[380px] lg:min-h-[480px]">

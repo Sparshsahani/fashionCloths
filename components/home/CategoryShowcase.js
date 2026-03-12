@@ -8,7 +8,7 @@ const categories = [
   {
     id: 1,
     name: "Men's Clothing",
-    image: 'https://source.unsplash.com/800x800/?clothing,men',
+    image: 'https://source.unsplash.com/800x800/?fashion,men',
     description: 'Stylish apparel for him',
     productCount: 120,
     link: '/product/1',
@@ -16,7 +16,7 @@ const categories = [
   {
     id: 2,
     name: "Women's Clothing",
-    image: 'https://source.unsplash.com/800x800/?clothing,women',
+    image: 'https://source.unsplash.com/800x800/?fashion,women',
     description: 'Elegant outfits for her',
     productCount: 98,
     link: '/product/2',
@@ -24,7 +24,7 @@ const categories = [
   {
     id: 3,
     name: 'Kids Clothing',
-    image: 'https://source.unsplash.com/800x800/?clothing,kids',
+    image: 'https://source.unsplash.com/800x800/?fashion,kids',
     description: 'Fun and comfy wear for children',
     productCount: 75,
     link: '/product/3',
@@ -32,7 +32,7 @@ const categories = [
   {
     id: 4,
     name: 'Accessories',
-    image: 'https://source.unsplash.com/800x800/?clothing,accessories',
+    image: 'https://source.unsplash.com/800x800/?fashion,accessories',
     description: 'Belts, hats, scarves and more',
     productCount: 64,
     link: '/product/4',
@@ -40,7 +40,7 @@ const categories = [
   {
     id: 5,
     name: 'Formal Wear',
-    image: 'https://source.unsplash.com/800x800/?formal,wear',
+    image: 'https://source.unsplash.com/800x800/?formal,attire',
     description: 'Suits and dresses for special occasions',
     productCount: 58,
     link: '/product/5',
@@ -48,7 +48,7 @@ const categories = [
   {
     id: 6,
     name: 'Casual Wear',
-    image: 'https://source.unsplash.com/800x800/?casual,clothes',
+    image: 'https://source.unsplash.com/800x800/?casual,fashion',
     description: 'Everyday comfortable outfits',
     productCount: 176,
     link: '/product/6',
@@ -56,7 +56,7 @@ const categories = [
   {
     id: 7,
     name: 'Ethnic Wear',
-    image: 'https://source.unsplash.com/800x800/?ethnic,clothes',
+    image: 'https://source.unsplash.com/800x800/?ethnic,fashion',
     description: 'Traditional and cultural styles',
     productCount: 82,
     link: '/product/7',
@@ -64,7 +64,7 @@ const categories = [
   {
     id: 8,
     name: 'Outerwear',
-    image: 'https://source.unsplash.com/800x800/?outerwear,jacket',
+    image: 'https://source.unsplash.com/800x800/?outerwear,fashion',
     description: 'Jackets, coats and warm layers',
     productCount: 47,
     link: '/product/8',
@@ -72,7 +72,7 @@ const categories = [
   {
     id: 9,
     name: 'Loungewear',
-    image: 'https://source.unsplash.com/800x800/?loungewear,relax',
+    image: 'https://source.unsplash.com/800x800/?loungewear,fashion',
     description: 'Relaxed clothing for home',
     productCount: 53,
     link: '/product/9',
@@ -119,10 +119,10 @@ export default function CategoryShowcase() {
           {/* Section Header */}
           <div className="text-center mb-16 px-4">
             <div className="inline-block mb-4">
-              <p className="text-[#c19a6b] text-xs font-semibold uppercase tracking-[0.2em] mb-2">
+              <p className="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-2">
                 Discover Excellence
               </p>
-              <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-[#c19a6b] to-transparent mx-auto"></div>
+              <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-white to-transparent mx-auto"></div>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 tracking-tight">
@@ -140,7 +140,7 @@ export default function CategoryShowcase() {
               <Link
                 key={category.id}
                 href={category.link}
-                className="group relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-[#c19a6b]/20 transition-all duration-500 border-2 border-[#2a2a2a] hover:border-[#c19a6b] hover:-translate-y-2"
+                className="group relative bg-[#0f0f0f] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 border-2 border-[#2a2a2a] hover:border-white hover:-translate-y-2"
               >
                 {/* Image - Increased height to 410px */}
                 <div className="h-[410px] overflow-hidden bg-black">
@@ -157,7 +157,7 @@ export default function CategoryShowcase() {
 
                 {/* Content - Always visible */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/90 to-transparent backdrop-blur-sm">
-                  <h3 className="font-serif font-bold text-white text-xl mb-2 group-hover:text-[#c19a6b] transition-colors duration-300">
+                  <h3 className="font-serif font-bold text-white text-xl mb-2 group-hover:text-white transition-colors duration-300">
                     {category.name}
                   </h3>
 
@@ -166,18 +166,18 @@ export default function CategoryShowcase() {
                   </p>
 
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-semibold text-[#c19a6b] uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-white uppercase tracking-wider">
                       {category.productCount} Products
                     </span>
                     <IconArrowRight
                       size={20}
-                      className="text-[#c19a6b] transform group-hover:translate-x-2 transition-transform duration-300"
+                      className="text-white transform group-hover:translate-x-2 transition-transform duration-300"
                     />
                   </div>
                 </div>
 
                 {/* Decorative corner accent */}
-                <div className="absolute top-4 right-4 w-10 h-10 border-t-2 border-r-2 border-[#c19a6b]/30 group-hover:border-[#c19a6b] transition-colors duration-300"></div>
+                <div className="absolute top-4 right-4 w-10 h-10 border-t-2 border-r-2 border-white/30 group-hover:border-white transition-colors duration-300"></div>
               </Link>
             ))}
           </div>
@@ -186,7 +186,7 @@ export default function CategoryShowcase() {
           <div className="text-center mt-16 px-4">
             <Link
               href="/products"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c19a6b] to-[#8b7355] text-white rounded-full font-semibold text-base shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-[#c19a6b]"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black rounded-full font-semibold text-base shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-white"
             >
               <IconSparkles size={20} />
               View All Categories
@@ -207,10 +207,10 @@ export default function CategoryShowcase() {
           {/* Section Header */}
           <div className="text-center mb-16 px-4">
             <div className="inline-block mb-4">
-              <p className="text-[#c19a6b] text-xs font-semibold uppercase tracking-[0.2em] mb-2">
+              <p className="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-2">
                 Discover Excellence
               </p>
-              <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-[#c19a6b] to-transparent mx-auto"></div>
+              <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-white to-transparent mx-auto"></div>
             </div>
 
             <h2 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6 tracking-tight">
@@ -227,7 +227,7 @@ export default function CategoryShowcase() {
             {/* Previous Button */}
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-[#c19a6b] hover:bg-[#8b7355] text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-200 text-black p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
               aria-label="Previous"
             >
               <IconChevronLeft size={24} />
@@ -236,7 +236,7 @@ export default function CategoryShowcase() {
             {/* Next Button */}
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-[#c19a6b] hover:bg-[#8b7355] text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-200 text-black p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
               aria-label="Next"
             >
               <IconChevronRight size={24} />
@@ -252,7 +252,7 @@ export default function CategoryShowcase() {
                   <Link
                     key={category.id}
                     href={category.link}
-                    className="group relative bg-[#0f0f0f] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#c19a6b]/20 transition-all duration-500 overflow-hidden border-2 border-[#2a2a2a] hover:border-[#c19a6b] hover:-translate-y-3 flex-shrink-0"
+                    className="group relative bg-[#0f0f0f] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 overflow-hidden border-2 border-[#2a2a2a] hover:border-white hover:-translate-y-3 flex-shrink-0"
                     style={{ width: `calc((100% - ${(itemsPerPage - 1) * 2}rem) / ${itemsPerPage})` }}
                   >
                     {/* Category Image */}
@@ -271,7 +271,7 @@ export default function CategoryShowcase() {
                     {/* Content - Always visible */}
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/90 to-transparent backdrop-blur-sm">
                       {/* Category Name */}
-                      <h3 className="font-serif font-bold text-white text-2xl mb-2 group-hover:text-[#c19a6b] transition-colors duration-300">
+                      <h3 className="font-serif font-bold text-white text-2xl mb-2 group-hover:text-white transition-colors duration-300">
                         {category.name}
                       </h3>
 
@@ -282,10 +282,10 @@ export default function CategoryShowcase() {
 
                       {/* Product Count & Arrow */}
                       <div className="flex items-center justify-between pt-3 border-t border-[#2a2a2a]">
-                        <span className="text-xs font-semibold text-[#c19a6b] uppercase tracking-wider">
+                        <span className="text-xs font-semibold text-white uppercase tracking-wider">
                           {category.productCount} Products
                         </span>
-                        <div className="flex items-center gap-2 text-[#c19a6b] font-medium text-sm">
+                        <div className="flex items-center gap-2 text-white font-medium text-sm">
                           <span>Explore</span>
                           <IconArrowRight
                             size={18}
@@ -296,10 +296,10 @@ export default function CategoryShowcase() {
                     </div>
 
                     {/* Decorative corner accent */}
-                    <div className="absolute top-5 right-5 w-12 h-12 border-t-2 border-r-2 border-[#c19a6b]/30 group-hover:border-[#c19a6b] transition-colors duration-300"></div>
+                    <div className="absolute top-5 right-5 w-12 h-12 border-t-2 border-r-2 border-white/30 group-hover:border-white transition-colors duration-300"></div>
 
                     {/* Bottom decorative line */}
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-transparent via-[#c19a6b] to-transparent group-hover:w-3/4 transition-all duration-500"></div>
+                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-3/4 transition-all duration-500"></div>
                   </Link>
                 ))}
               </div>
@@ -313,7 +313,7 @@ export default function CategoryShowcase() {
                   onClick={() => setCurrentIndex(index * itemsPerPage)}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     Math.floor(currentIndex / itemsPerPage) === index
-                      ? 'w-8 bg-[#c19a6b]'
+                      ? 'w-8 bg-white'
                       : 'w-2 bg-gray-600 hover:bg-gray-500'
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
@@ -326,7 +326,7 @@ export default function CategoryShowcase() {
           <div className="text-center mt-16 px-4">
             <Link
               href="/products"
-              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#c19a6b] to-[#8b7355] text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-[#c19a6b]"
+              className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-white to-white text-black rounded-full font-semibold text-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 border border-black"
             >
               <IconSparkles size={22} />
               View All Categories
