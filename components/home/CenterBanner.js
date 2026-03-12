@@ -5,11 +5,11 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export default function CenterBanner({
   title = "Step Into Style",
-  subtitle = "New Arrivals",
-  description = "Browse the latest cloths crafted with care—fresh designs that make a statement.",
+  subtitle = "New Fashion Drops",
+  description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.",
   ctaText = "Shop Now",
   ctaLink = "/products",
-  image = "https://source.unsplash.com/1600x900/?fashion,clothes",
+  image = "https://source.unsplash.com/1600x900/?fashion,model",
   align = "right",
 }) {
   const ref = useRef(null);
@@ -34,6 +34,7 @@ export default function CenterBanner({
   }, []);
 
   return (
+    <>
     <section
       ref={ref}
       className="relative bg-cover bg-center overflow-hidden min-h-[420px] md:min-h-[520px] lg:min-h-[620px] flex items-center w-full"
@@ -53,7 +54,7 @@ export default function CenterBanner({
         >
           <div className="flex items-center gap-3 mb-4">
             <span className="h-[1px] w-8 bg-[var(--primary)]"></span>
-            <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-[var(--primary)] font-bold">
+            <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-[var(--white)] font-bold">
               {subtitle}
             </p>
           </div>
@@ -69,7 +70,7 @@ export default function CenterBanner({
           <div className="flex justify-start">
             <a
               href={ctaLink}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c19a6b] to-[#8b7355] text-white rounded-full font-semibold text-base shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-[#c19a6b]"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-white to-white text-black rounded-full font-semibold text-base shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-black"
             >
               <span>{ctaText}</span>
               <IconArrowRight
@@ -81,5 +82,6 @@ export default function CenterBanner({
         </div>
       </div>
     </section>
+    </>
   );
 }

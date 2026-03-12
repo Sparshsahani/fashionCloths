@@ -74,6 +74,7 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-400: #ff6568;
     --color-red-500: #fb2c36;
     --color-red-600: #e40014;
     --color-green-500: #00c758;
@@ -152,6 +153,7 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
+      --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
       --color-green-500: lab(70.5521% -66.5147 45.8072);
@@ -1109,6 +1111,10 @@
     gap: calc(var(--spacing) * 10);
   }
 
+  .gap-300 {
+    gap: calc(var(--spacing) * 300);
+  }
+
   :where(.space-y-2 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
@@ -1297,6 +1303,10 @@
     background-color: #181717;
   }
 
+  .bg-\[\#D4C5AF\] {
+    background-color: #d4c5af;
+  }
+
   .bg-\[\#c19a6b\] {
     background-color: #c19a6b;
   }
@@ -1389,6 +1399,10 @@
 
   .bg-green-500 {
     background-color: var(--color-green-500);
+  }
+
+  .bg-red-400 {
+    background-color: var(--color-red-400);
   }
 
   .bg-red-500 {
@@ -1800,6 +1814,10 @@
     fill: var(--color-black);
   }
 
+  .object-contain {
+    object-fit: contain;
+  }
+
   .object-cover {
     object-fit: cover;
   }
@@ -2115,6 +2133,10 @@
     color: #000000bf;
   }
 
+  .text-\[var\(--black\)\] {
+    color: var(--black);
+  }
+
   .text-\[var\(--gray-50\)\] {
     color: var(--gray-50);
   }
@@ -2129,6 +2151,10 @@
 
   .text-\[var\(--text-primary\)\] {
     color: var(--text-primary);
+  }
+
+  .text-\[var\(--white\)\] {
+    color: var(--white);
   }
 
   .text-black {
@@ -2704,6 +2730,12 @@
   @media (hover: hover) {
     .hover\:bg-gray-800:hover {
       background-color: var(--color-gray-800);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-white:hover {
+      background-color: var(--color-white);
     }
   }
 

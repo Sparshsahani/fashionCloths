@@ -23,16 +23,12 @@ export default function Footer() {
             {/* Brand Section */}
             <div data-aos="fade-up" data-aos-delay="0">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-[var(--primary)] to-[var(--secondary)] rounded-xl flex items-center justify-center text-black font-bold text-xl shadow-xl">
-                  Z
-                </div>
-                <h3 className="text-2xl font-bold text-[var(--primary)]">
-                  Zarnith
-                </h3>
+                {/* logo image placed in public folder */}
+                <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
-                Premium cloths that define elegance and luxury. Experience
-                style with every stitch.
+                Your destination for premium apparel and timeless style. Discover
+                curated collections crafted to elevate your wardrobe.
               </p>
               <div className="flex gap-3">
                 <a href="#" className="social-icon">
@@ -53,7 +49,7 @@ export default function Footer() {
             {/* Quick Links */}
             <div data-aos="fade-up" data-aos-delay="100">
               <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
-              <div className="h-[2px] w-12 bg-[#c19a6b] mb-4"></div>
+              <div className="h-[2px] w-12 bg-white mb-4"></div>
               <ul className="space-y-2">
                 <li>
                   <Link href="/" className="footer-link">
@@ -86,7 +82,7 @@ export default function Footer() {
             {/* Categories */}
             <div data-aos="fade-up" data-aos-delay="200">
               <h4 className="text-lg font-semibold mb-2">Categories</h4>
-              <div className="h-[2px] w-12 bg-[#c19a6b] mb-4"></div>
+              <div className="h-[2px] w-12 bg-white mb-4"></div>
               <ul className="space-y-2">
                 <li>
                   <Link href="/category/men" className="footer-link">
@@ -119,7 +115,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div data-aos="fade-up" data-aos-delay="300">
               <h4 className="text-lg font-semibold mb-2">Get In Touch</h4>
-              <div className="h-[2px] w-12 bg-[#c19a6b] mb-4"></div>
+              <div className="h-[2px] w-12 bg-white mb-4"></div>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <IconMapPin
@@ -164,17 +160,18 @@ export default function Footer() {
             width: 40px;
             height: 40px;
             border-radius: var(--radius-md);
-            background-color: #c19a6b;
+            background-color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all var(--transition-base);
-            color: white;
+            color: black;
           }
 
           .social-icon:hover {
             background-color: #8b7355;
             transform: translateY(-3px);
+            color: white;
             box-shadow: 0 4px 12px rgba(193, 154, 107, 0.4);
           }
 
@@ -192,11 +189,11 @@ export default function Footer() {
       </footer>
 
       {/* Bottom Bar with Gold Background - Full Width */}
-      <div className="py-2 w-full bg-gradient-to-r from-[#c19a6b] via-[#d4b085] to-[#c19a6b] border-t-2 border-[#8b7355]">
+      <div className="py-2 w-full bg-white border-t-2 border-black">
         <div className="container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[#2c2416] text-sm text-center md:text-left font-medium">
-              © {currentYear} Zarnith. All rights reserved.
+            <p className="text-black text-sm text-center md:text-left font-medium">
+              © {currentYear} Cloths. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm">
               <Link

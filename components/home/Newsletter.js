@@ -24,13 +24,13 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden bg-[var(--primary)]">
+    <section className="py-20 md:py-28 relative overflow-hidden bg-[#D4C5AF]">
       {/* subtle background blobs */}
       <div className="absolute -left-8 -top-8 w-72 h-72 bg-gradient-to-br from-[rgba(255,255,255,0.06)] to-[rgba(255,255,255,0.01)] rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute -right-16 bottom-8 w-56 h-56 bg-gradient-to-tr from-[rgba(166,126,59,0.06)] to-[rgba(255,255,255,0.01)] rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="container text-center relative z-10 text-black px-4">
-        < div
+        <div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -48,7 +48,7 @@ export default function Newsletter() {
           </p>
         </ div>
 
-        < form
+        <form
           onSubmit={submit}
           className="max-w-lg mx-auto px-2"
           initial={{ opacity: 0, y: 18 }}
@@ -58,7 +58,7 @@ export default function Newsletter() {
           aria-live="polite"
         >
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center">
-            < input
+            <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               type="email"
@@ -69,7 +69,7 @@ export default function Newsletter() {
               required
             />
 
-            < button
+            <button
               type="submit"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-black text-white font-bold rounded-full hover:bg-black/90 hover:shadow-xl transition-all duration-300 whitespace-nowrap flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base"
               whileTap={{ scale: 0.98 }}
@@ -116,10 +116,10 @@ export default function Newsletter() {
               ) : (
                 "Subscribe"
               )}
-            </ button>
+            </button>
           </div>
 
-          < div
+          <div
             initial={{ opacity: 0, y: 6 }}
             animate={{
               opacity: status === "error" || status === "success" ? 1 : 0,
@@ -139,12 +139,12 @@ export default function Newsletter() {
                 Thanks — you&apos;re subscribed!
               </p>
             )}
-          </ div>
+          </div>
 
           <p className="text-xs text-black/60 mt-3 sm:mt-4 px-2">
             We respect your privacy. Unsubscribe anytime.
           </p>
-        </ form>
+        </form>
       </div>
     </section>
   );

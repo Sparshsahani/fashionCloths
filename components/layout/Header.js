@@ -69,7 +69,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 bg-[var(--white)] transform transition-transform duration-300 ${hideOnScroll ? '-translate-y-full' : 'translate-y-0'}`}>
+      <header className={`sticky top-0 z-50 bg-[#D4C5AF] transform transition-transform duration-300 ${hideOnScroll ? '-translate-y-full' : 'translate-y-0'}`}>
         {/* Top Bar */}
         <div className="bg-[var(--black)] text-white py-4">
           <div className="container flex justify-between items-center text-sm font-semibold px-6">
@@ -83,7 +83,7 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 gap-8">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-20 h-20 rounded-xl overflow-hidden shadow-xl group-hover:scale-110 transition-transform duration-300">
+              <div className="w-20 h-20 rounded-xl overflow-hidden  group-hover:scale-110 transition-transform duration-300">
                 <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
               </div>
               {/* text removed, logo only header */}
