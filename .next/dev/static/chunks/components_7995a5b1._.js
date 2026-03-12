@@ -112,7 +112,7 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "100",
-                                            className: "jsx-5a8695ea085b9909" + " " + "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] rounded-full shadow-2xl",
+                                            className: "jsx-5a8695ea085b9909" + " " + "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--white)] to-[var(--white)] rounded-full shadow-2xl",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                                     size: 16,
@@ -139,7 +139,7 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "200",
-                                            className: "jsx-5a8695ea085b9909" + " " + "text-[var(--primary)] text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase",
+                                            className: "jsx-5a8695ea085b9909" + " " + "text-white text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase",
                                             children: slide.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/components/home/HeroBanner.js",
@@ -176,7 +176,7 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "400",
-                                            className: "jsx-5a8695ea085b9909" + " " + "text-[14px] md:text-[16px] lg:text-[18px] text-gray-300 max-w-2xl leading-relaxed font-light",
+                                            className: "jsx-5a8695ea085b9909" + " " + "text-[14px] md:text-[16px] lg:text-[18px] text-white/80 max-w-2xl leading-relaxed font-light",
                                             children: slide.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/home/HeroBanner.js",

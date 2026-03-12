@@ -86,7 +86,7 @@ export default function HeroBanner() {
                 <div
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] rounded-full shadow-2xl"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--white)] to-[var(--white)] rounded-full shadow-2xl"
                 >
                   <IconStar size={16} className="fill-black text-black" />
                   <span className="text-[8px] md:text-[10px] font-semibold text-black uppercase tracking-wider">
@@ -98,7 +98,7 @@ export default function HeroBanner() {
                 <p
                   data-aos="fade-up"
                   data-aos-delay="200"
-                  className="text-[var(--primary)] text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase"
+                  className="text-white text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase"
                 >
                   {slide.subtitle}
                 </p>
@@ -121,7 +121,7 @@ export default function HeroBanner() {
                 <p
                   data-aos="fade-up"
                   data-aos-delay="400"
-                  className="text-[14px] md:text-[16px] lg:text-[18px] text-gray-300 max-w-2xl leading-relaxed font-light"
+                  className="text-[14px] md:text-[16px] lg:text-[18px] text-white/80 max-w-2xl leading-relaxed font-light"
                 >
                   {slide.description}
                 </p>
