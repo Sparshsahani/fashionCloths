@@ -7,74 +7,74 @@ import { IconArrowRight, IconSparkles, IconChevronLeft, IconChevronRight } from 
 const categories = [
   {
     id: 1,
-    name: 'Agarbatti',
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop',
-    description: 'Traditional incense sticks',
-    productCount: 45,
+    name: "Men's Clothing",
+    image: 'https://source.unsplash.com/800x800/?clothing,men',
+    description: 'Stylish apparel for him',
+    productCount: 120,
     link: '/product/1',
   },
   {
     id: 2,
-    name: 'Men Perfume',
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop',
-    description: 'Bold & masculine fragrances',
-    productCount: 68,
+    name: "Women's Clothing",
+    image: 'https://source.unsplash.com/800x800/?clothing,women',
+    description: 'Elegant outfits for her',
+    productCount: 98,
     link: '/product/2',
   },
   {
     id: 3,
-    name: 'Women Perfume',
-    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80&fit=crop',
-    description: 'Elegant & feminine scents',
-    productCount: 82,
+    name: 'Kids Clothing',
+    image: 'https://source.unsplash.com/800x800/?clothing,kids',
+    description: 'Fun and comfy wear for children',
+    productCount: 75,
     link: '/product/3',
   },
   {
     id: 4,
-    name: 'Loban',
-    image: 'https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=800&q=80&fit=crop',
-    description: 'Pure frankincense',
-    productCount: 28,
+    name: 'Accessories',
+    image: 'https://source.unsplash.com/800x800/?clothing,accessories',
+    description: 'Belts, hats, scarves and more',
+    productCount: 64,
     link: '/product/4',
   },
   {
     id: 5,
-    name: 'Unisex Perfume',
-    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&q=80&fit=crop',
-    description: 'Versatile fragrances',
-    productCount: 52,
+    name: 'Formal Wear',
+    image: 'https://source.unsplash.com/800x800/?formal,wear',
+    description: 'Suits and dresses for special occasions',
+    productCount: 58,
     link: '/product/5',
   },
   {
     id: 6,
-    name: 'Car Perfume',
-    image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-    description: 'Fresh car fragrances',
-    productCount: 34,
+    name: 'Casual Wear',
+    image: 'https://source.unsplash.com/800x800/?casual,clothes',
+    description: 'Everyday comfortable outfits',
+    productCount: 176,
     link: '/product/6',
   },
   {
     id: 7,
-    name: 'Product Combo',
-    image: 'https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=800&q=80&fit=crop',
-    description: 'Special combo packs',
-    productCount: 19,
+    name: 'Ethnic Wear',
+    image: 'https://source.unsplash.com/800x800/?ethnic,clothes',
+    description: 'Traditional and cultural styles',
+    productCount: 82,
     link: '/product/7',
   },
   {
     id: 8,
-    name: 'Room Spray',
-    image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-    description: 'Instant room fresheners',
-    productCount: 27,
+    name: 'Outerwear',
+    image: 'https://source.unsplash.com/800x800/?outerwear,jacket',
+    description: 'Jackets, coats and warm layers',
+    productCount: 47,
     link: '/product/8',
   },
   {
     id: 9,
-    name: 'Gift Sets',
-    image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-    description: 'Curated fragrance gift sets',
-    productCount: 12,
+    name: 'Loungewear',
+    image: 'https://source.unsplash.com/800x800/?loungewear,relax',
+    description: 'Relaxed clothing for home',
+    productCount: 53,
     link: '/product/9',
   },
 ];
@@ -130,7 +130,7 @@ export default function CategoryShowcase() {
             </h2>
 
             <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-              Explore our curated collections of premium fragrances
+              Explore our curated collections of premium cloths
             </p>
           </div>
 
@@ -218,7 +218,7 @@ export default function CategoryShowcase() {
             </h2>
 
             <p className="text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed font-light">
-              Explore our curated collections of premium fragrances
+              Explore our curated collections of premium cloths
             </p>
           </div>
 

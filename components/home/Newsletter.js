@@ -37,14 +37,14 @@ export default function Newsletter() {
           viewport={{ once: true, amount: 0.4 }}
         >
           <p className="text-black text-xs sm:text-sm font-bold uppercase tracking-wider mb-3 sm:mb-4">
-            Stay Updated
+            Stay in Style
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 px-2">
-            Subscribe to Our Newsletter
+            Join Our Fashion Circle
           </h2>
           <p className="text-[rgba(0,0,0,0.75)] text-sm sm:text-base md:text-lg mb-8 sm:mb-10 max-w-2xl mx-auto px-2">
-            Get exclusive deals, new arrivals, and fragrance tips delivered to
-            your inbox
+            Receive cloths drops, exclusive offers, and style inspiration right
+            in your inbox
           </p>
         </ div>
 

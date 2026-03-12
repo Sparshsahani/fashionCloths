@@ -279,10 +279,10 @@ function Home() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$home$2f$CenterBanner$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 title: "Explore New Arrivals",
                 subtitle: "Limited Edition",
-                description: "Discover our freshly launched, limited‑edition fragrances — crafted to leave a lasting impression.",
+                description: "Check out the latest cloths dropped this season — styles that speak for you.",
                 ctaText: "Shop New Arrivals",
-                ctaLink: "/collection/new",
-                image: "/image/text_bg_img.jpg",
+                ctaLink: "/products/new",
+                image: "https://source.unsplash.com/1600x900/?new,clothes",
                 align: "left"
             }, void 0, false, {
                 fileName: "[project]/app/page.js",

@@ -9,38 +9,38 @@ import ProductCard from '@/components/common/ProductCard';
 const getProductById = (id) => {
   return {
     id: id,
-    name: 'Midnight Oud Intense Premium Perfume',
-    price: 2499,
+    name: 'Classic Denim Jacket',
+    price: 2999,
     originalPrice: 3999,
     rating: 4.8,
     reviews: 234,
     inStock: true,
-    category: 'Eau de Parfum',
-    brand: 'ZP Fragrances',
-    description: 'Experience the luxurious blend of exotic oud and warm spices in this premium fragrance. Perfect for evening wear and special occasions.',
-    fullDescription: `Midnight Oud Intense is a captivating fragrance that combines the richness of traditional oud with modern sophistication. This premium perfume opens with refreshing notes of bergamot and lavender, transitioning into a heart of rich oud, amber, and rose. The base notes of sandalwood, musk, and vanilla create a long-lasting, memorable trail.
+    category: 'Outerwear',
+    brand: 'Zarnith Apparel',
+    description: 'A timeless denim jacket crafted from premium denim. Perfect for layering and everyday style.',
+    fullDescription: `This classic denim jacket blends rugged durability with contemporary fit. Made from 100% cotton, it features a button‑front closure, chest pockets, and a slightly tailored silhouette.
 
-Crafted for the discerning individual, this fragrance embodies elegance and confidence. Its complex composition evolves throughout the day, revealing different facets of its personality.
+Ideal for casual outings and transitional weather, the jacket pairs effortlessly with tees and trousers. Its wash gives a vintage vibe while remaining soft and comfortable.
 
-Perfect for evening events, special occasions, or when you want to make a lasting impression.`,
+Whether you’re heading out with friends or running errands, this jacket adds an instant edge to any outfit.`,
     features: [
-      'Long-lasting fragrance (8-10 hours)',
-      'Premium quality ingredients',
-      'Suitable for all seasons',
-      'Unisex appeal',
-      '100ml Eau de Parfum',
-      'Elegant packaging',
+      '100% premium cotton denim',
+      'Button‑front closure',
+      'Chest flap pockets',
+      'Machine washable',
+      'Modern tailored fit',
+      'Available in various washes',
     ],
     notes: {
-      top: ['Bergamot', 'Lavender', 'Cardamom'],
-      middle: ['Oud', 'Amber', 'Rose', 'Jasmine'],
-      base: ['Sandalwood', 'Musk', 'Vanilla', 'Patchouli'],
+      top: ['Soft cotton', 'Sturdy stitching'],
+      middle: ['Classic blue hue', 'Light distressing'],
+      base: ['Comfortable inner lining', 'Durable seams'],
     },
     images: [
-      'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800',
-      'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=800',
-      'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800',
-      'https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=800',
+      'https://source.unsplash.com/800x800/?denim,jacket',
+      'https://source.unsplash.com/800x800/?jacket,denim',
+      'https://source.unsplash.com/800x800/?fashion,jacket',
+      'https://source.unsplash.com/800x800/?outfit,denim',
     ],
   };
 };
@@ -49,47 +49,47 @@ Perfect for evening events, special occasions, or when you want to make a lastin
 const relatedProducts = [
   {
     id: 2,
-    name: 'Royal Amber Collection',
-    price: 1899,
-    originalPrice: 2999,
+    name: 'Leather Biker Jacket',
+    price: 4999,
+    originalPrice: 6999,
     rating: 4.6,
     reviews: 189,
-    image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=800',
+    image: 'https://source.unsplash.com/800x800/?leather,jacket',
     badge: 'Bestseller',
-    category: 'Perfume',
+    category: 'Outerwear',
   },
   {
     id: 3,
-    name: 'Fresh Citrus Breeze',
-    price: 899,
-    originalPrice: 1299,
+    name: 'Striped Casual Shirt',
+    price: 1299,
+    originalPrice: 1799,
     rating: 4.4,
     reviews: 156,
-    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800',
+    image: 'https://source.unsplash.com/800x800/?striped,shirt',
     badge: 'Sale',
-    category: 'Eau de Toilette',
+    category: 'Casual Wear',
   },
   {
     id: 4,
-    name: 'Velvet Rose Noir',
-    price: 3299,
-    originalPrice: 4999,
+    name: 'Wool Blend Scarf',
+    price: 799,
+    originalPrice: 1299,
     rating: 4.9,
     reviews: 312,
-    image: 'https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=800',
+    image: 'https://source.unsplash.com/800x800/?wool,scarf',
     badge: 'Premium',
-    category: 'Eau de Parfum',
+    category: 'Accessories',
   },
   {
     id: 5,
-    name: 'Ocean Mist Pour Homme',
-    price: 1499,
+    name: 'Denim Shorts',
+    price: 999,
     originalPrice: null,
     rating: 4.5,
     reviews: 98,
-    image: 'https://images.unsplash.com/photo-1563170351-be82bc888aa4?w=800',
+    image: 'https://source.unsplash.com/800x800/?denim,shorts',
     badge: null,
-    category: 'Cologne',
+    category: 'Casual Wear',
   },
 ];
 
@@ -313,7 +313,7 @@ export default function ProductDetailPage({ params }) {
                 activeTab === 'notes' ? 'text-[var(--primary)]' : 'text-gray-400 hover:text-white'
               }`}
             >
-              Fragrance Notes
+              Fabric Details
               {activeTab === 'notes' && (
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--primary)]"></span>
               )}

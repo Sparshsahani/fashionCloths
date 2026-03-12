@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///E:/Freelancing/Cloths/node_modules/.pnpm/next%4016.1.6_%40babel%2Bcore%407.2_de68e8e93aa421514965ddcf009bccaf/node_modules/next/error.js"],"sourcesContent":["module.exports = require('./dist/pages/_error')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}}]
+}

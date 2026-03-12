@@ -1,7 +1,7 @@
 'use client';
 
 export default function ScrollingText() {
-  const text = "Premium Fragrances • Authentic Products • Luxury Scents • Best Quality • ";
+  const text = "Designer Cloths • Trendy Styles • Best Fabrics • Perfect Fit • ";
   
   return (
     <section data-aos="fade" className="relative bg-[var(--primary)] overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]">

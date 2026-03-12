@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { IconArrowRight } from "@tabler/icons-react";
 
 export default function CenterBanner({
-  title = "Discover Our Signature Scents",
-  subtitle = "Signature Collection",
-  description = "Handcrafted blends made from premium ingredients — crafted to leave a lasting impression.",
-  ctaText = "Explore Collection",
-  ctaLink = "/collection/signature",
-  image = "/image/center_bg_img_copy.png",
+  title = "Step Into Style",
+  subtitle = "New Arrivals",
+  description = "Browse the latest cloths crafted with care—fresh designs that make a statement.",
+  ctaText = "Shop Now",
+  ctaLink = "/products",
+  image = "https://source.unsplash.com/1600x900/?fashion,clothes",
   align = "right",
 }) {
   const ref = useRef(null);

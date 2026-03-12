@@ -25,10 +25,10 @@ export default function Home() {
       <CenterBanner
         title="Explore New Arrivals"
         subtitle="Limited Edition"
-        description="Discover our freshly launched, limited‑edition fragrances — crafted to leave a lasting impression."
+        description="Check out the latest cloths dropped this season — styles that speak for you."
         ctaText="Shop New Arrivals"
-        ctaLink="/collection/new"
-        image="/image/text_bg_img.jpg"
+        ctaLink="/products/new"
+        image="https://source.unsplash.com/1600x900/?new,clothes"
         align="left"
       />
 

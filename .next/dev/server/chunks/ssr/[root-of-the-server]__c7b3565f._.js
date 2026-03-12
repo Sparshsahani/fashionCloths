@@ -30,32 +30,32 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 ;
 const categories = [
     {
-        name: "Agarbatti",
-        href: "/category/agarbatti"
-    },
-    {
-        name: "Men Perfume",
+        name: "Men Clothing",
         href: "/category/men"
     },
     {
-        name: "Women Perfume",
+        name: "Women Clothing",
         href: "/category/women"
     },
     {
-        name: "Loban",
-        href: "/category/loban"
+        name: "Kids Clothing",
+        href: "/category/kids"
     },
     {
-        name: "Unisex Perfume",
-        href: "/category/unisex"
+        name: "Accessories",
+        href: "/category/accessories"
     },
     {
-        name: "Car Perfume",
-        href: "/category/car"
+        name: "Formal Wear",
+        href: "/category/formal"
     },
     {
-        name: "Product Combo",
-        href: "/category/combo"
+        name: "Casual Wear",
+        href: "/category/casual"
+    },
+    {
+        name: "Ethnic Wear",
+        href: "/category/ethnic"
     }
 ];
 function Header() {
@@ -101,7 +101,7 @@ function Header() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "jsx-8510e1a8976405de",
-                                    children: "Free Shipping on Orders Above ₹999"
+                                    children: "Free Shipping on Orders Above ₹999 – Fashion Delivered"
                                 }, void 0, false, {
                                     fileName: "[project]/components/layout/Header.js",
                                     lineNumber: 64,
@@ -749,7 +749,7 @@ function Footer() {
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "jsx-c5ae72317ef4fa54" + " " + "text-gray-400 mb-4 leading-relaxed",
-                                            children: "Premium fragrances that define elegance and luxury. Experience the essence of sophistication."
+                                            children: "Premium cloths that define elegance and luxury. Experience style with every stitch."
                                         }, void 0, false, {
                                             fileName: "[project]/components/layout/Footer.js",
                                             lineNumber: 33,
@@ -904,9 +904,9 @@ function Footer() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                     className: "jsx-c5ae72317ef4fa54",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: "/blog",
+                                                        href: "/shop",
                                                         className: "footer-link",
-                                                        children: "Blog"
+                                                        children: "Shop"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 74,
@@ -973,7 +973,7 @@ function Footer() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                         href: "/category/men",
                                                         className: "footer-link",
-                                                        children: "Men Perfume"
+                                                        children: "Men Clothing"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 92,
@@ -989,7 +989,7 @@ function Footer() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                         href: "/category/women",
                                                         className: "footer-link",
-                                                        children: "Women Perfume"
+                                                        children: "Women Clothing"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 97,
@@ -1005,7 +1005,7 @@ function Footer() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                         href: "/category/unisex",
                                                         className: "footer-link",
-                                                        children: "Unisex"
+                                                        children: "Unisex Clothing"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 102,
@@ -1019,9 +1019,9 @@ function Footer() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                     className: "jsx-c5ae72317ef4fa54",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: "/category/agarbatti",
+                                                        href: "/category/formal",
                                                         className: "footer-link",
-                                                        children: "Agarbatti"
+                                                        children: "Formal Wear"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 107,
@@ -1035,9 +1035,9 @@ function Footer() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                     className: "jsx-c5ae72317ef4fa54",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: "/category/combo",
+                                                        href: "/category/casual",
                                                         className: "footer-link",
-                                                        children: "Combo Packs"
+                                                        children: "Casual Wear"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/layout/Footer.js",
                                                         lineNumber: 112,
@@ -1096,7 +1096,7 @@ function Footer() {
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "jsx-c5ae72317ef4fa54" + " " + "text-gray-400 text-sm",
-                                                            children: "123 Fragrance Street, Mumbai, India"
+                                                            children: "123 Fashion Ave, Mumbai, India"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/layout/Footer.js",
                                                             lineNumber: 129,
@@ -1146,9 +1146,9 @@ function Footer() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                            href: "mailto:info@zarnith.com",
+                                                            href: "mailto:info@fashion.com",
                                                             className: "jsx-c5ae72317ef4fa54" + " " + "text-gray-400 text-sm hover:text-white transition-colors",
-                                                            children: "info@zarnith.com"
+                                                            children: "info@fashion.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/layout/Footer.js",
                                                             lineNumber: 150,
@@ -1364,7 +1364,7 @@ function Newsletter() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-black text-xs sm:text-sm font-bold uppercase tracking-wider mb-3 sm:mb-4",
-                                children: "Stay Updated"
+                                children: "Stay in Style"
                             }, void 0, false, {
                                 fileName: "[project]/components/home/Newsletter.js",
                                 lineNumber: 39,
@@ -1372,7 +1372,7 @@ function Newsletter() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 sm:mb-6 px-2",
-                                children: "Subscribe to Our Newsletter"
+                                children: "Join Our Fashion Circle"
                             }, void 0, false, {
                                 fileName: "[project]/components/home/Newsletter.js",
                                 lineNumber: 42,
@@ -1380,7 +1380,7 @@ function Newsletter() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-[rgba(0,0,0,0.75)] text-sm sm:text-base md:text-lg mb-8 sm:mb-10 max-w-2xl mx-auto px-2",
-                                children: "Get exclusive deals, new arrivals, and fragrance tips delivered to your inbox"
+                                children: "Receive cloths drops, exclusive offers, and style inspiration right in your inbox"
                             }, void 0, false, {
                                 fileName: "[project]/components/home/Newsletter.js",
                                 lineNumber: 45,

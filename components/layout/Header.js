@@ -12,13 +12,13 @@ import {
 } from "@tabler/icons-react";
 
 const categories = [
-  { name: "Agarbatti", href: "/category/agarbatti" },
-  { name: "Men Perfume", href: "/category/men" },
-  { name: "Women Perfume", href: "/category/women" },
-  { name: "Loban", href: "/category/loban" },
-  { name: "Unisex Perfume", href: "/category/unisex" },
-  { name: "Car Perfume", href: "/category/car" },
-  { name: "Product Combo", href: "/category/combo" },
+  { name: "Men Clothing", href: "/category/men" },
+  { name: "Women Clothing", href: "/category/women" },
+  { name: "Kids Clothing", href: "/category/kids" },
+  { name: "Accessories", href: "/category/accessories" },
+  { name: "Formal Wear", href: "/category/formal" },
+  { name: "Casual Wear", href: "/category/casual" },
+  { name: "Ethnic Wear", href: "/category/ethnic" },
 ];
 
 export default function Header() {
@@ -61,7 +61,7 @@ export default function Header() {
         {/* Top Bar */}
         <div className="bg-[var(--primary)] text-black py-4">
           <div className="container flex justify-between items-center text-sm font-semibold px-6">
-            <p>Free Shipping on Orders Above ₹999</p>
+            <p>Free Shipping on Orders Above ₹999 – Fashion Delivered</p>
             <p className="hidden sm:block">Contact: +91 1234567890</p>
           </div>
         </div>

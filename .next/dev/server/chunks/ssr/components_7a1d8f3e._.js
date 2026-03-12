@@ -269,74 +269,74 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 const categories = [
     {
         id: 1,
-        name: 'Agarbatti',
-        image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop',
-        description: 'Traditional incense sticks',
-        productCount: 45,
+        name: "Men's Clothing",
+        image: 'https://source.unsplash.com/800x800/?clothing,men',
+        description: 'Stylish apparel for him',
+        productCount: 120,
         link: '/product/1'
     },
     {
         id: 2,
-        name: 'Men Perfume',
-        image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop',
-        description: 'Bold & masculine fragrances',
-        productCount: 68,
+        name: "Women's Clothing",
+        image: 'https://source.unsplash.com/800x800/?clothing,women',
+        description: 'Elegant outfits for her',
+        productCount: 98,
         link: '/product/2'
     },
     {
         id: 3,
-        name: 'Women Perfume',
-        image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80&fit=crop',
-        description: 'Elegant & feminine scents',
-        productCount: 82,
+        name: 'Kids Clothing',
+        image: 'https://source.unsplash.com/800x800/?clothing,kids',
+        description: 'Fun and comfy wear for children',
+        productCount: 75,
         link: '/product/3'
     },
     {
         id: 4,
-        name: 'Loban',
-        image: 'https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=800&q=80&fit=crop',
-        description: 'Pure frankincense',
-        productCount: 28,
+        name: 'Accessories',
+        image: 'https://source.unsplash.com/800x800/?clothing,accessories',
+        description: 'Belts, hats, scarves and more',
+        productCount: 64,
         link: '/product/4'
     },
     {
         id: 5,
-        name: 'Unisex Perfume',
-        image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&q=80&fit=crop',
-        description: 'Versatile fragrances',
-        productCount: 52,
+        name: 'Formal Wear',
+        image: 'https://source.unsplash.com/800x800/?formal,wear',
+        description: 'Suits and dresses for special occasions',
+        productCount: 58,
         link: '/product/5'
     },
     {
         id: 6,
-        name: 'Car Perfume',
-        image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-        description: 'Fresh car fragrances',
-        productCount: 34,
+        name: 'Casual Wear',
+        image: 'https://source.unsplash.com/800x800/?casual,clothes',
+        description: 'Everyday comfortable outfits',
+        productCount: 176,
         link: '/product/6'
     },
     {
         id: 7,
-        name: 'Product Combo',
-        image: 'https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=800&q=80&fit=crop',
-        description: 'Special combo packs',
-        productCount: 19,
+        name: 'Ethnic Wear',
+        image: 'https://source.unsplash.com/800x800/?ethnic,clothes',
+        description: 'Traditional and cultural styles',
+        productCount: 82,
         link: '/product/7'
     },
     {
         id: 8,
-        name: 'Room Spray',
-        image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-        description: 'Instant room fresheners',
-        productCount: 27,
+        name: 'Outerwear',
+        image: 'https://source.unsplash.com/800x800/?outerwear,jacket',
+        description: 'Jackets, coats and warm layers',
+        productCount: 47,
         link: '/product/8'
     },
     {
         id: 9,
-        name: 'Gift Sets',
-        image: 'https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop',
-        description: 'Curated fragrance gift sets',
-        productCount: 12,
+        name: 'Loungewear',
+        image: 'https://source.unsplash.com/800x800/?loungewear,relax',
+        description: 'Relaxed clothing for home',
+        productCount: 53,
         link: '/product/9'
     }
 ];
@@ -411,7 +411,7 @@ function CategoryShowcase() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light",
-                                        children: "Explore our curated collections of premium fragrances"
+                                        children: "Explore our curated collections of premium cloths"
                                     }, void 0, false, {
                                         fileName: "[project]/components/home/CategoryShowcase.js",
                                         lineNumber: 132,
@@ -621,7 +621,7 @@ function CategoryShowcase() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed font-light",
-                                        children: "Explore our curated collections of premium fragrances"
+                                        children: "Explore our curated collections of premium cloths"
                                     }, void 0, false, {
                                         fileName: "[project]/components/home/CategoryShowcase.js",
                                         lineNumber: 220,
@@ -1142,88 +1142,88 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 const sampleProducts = [
     {
         id: 1,
-        name: "Oud Royale Premium Perfume",
-        price: 1299,
-        originalPrice: 1999,
+        name: "Classic Denim Jacket",
+        price: 2999,
+        originalPrice: 3999,
         rating: 4.8,
-        reviews: 156,
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop",
+        reviews: 212,
+        image: "https://source.unsplash.com/800x800/?denim,jacket",
         badge: "Best Seller",
-        category: "Men Perfume"
+        category: "Outerwear"
     },
     {
         id: 2,
-        name: "Rose Garden Women Perfume",
-        price: 899,
-        originalPrice: 1499,
+        name: "Floral Summer Dress",
+        price: 2499,
+        originalPrice: 3499,
         rating: 4.6,
-        reviews: 89,
-        image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80&fit=crop",
+        reviews: 158,
+        image: "https://source.unsplash.com/800x800/?summer-dress,floral",
         badge: "New",
-        category: "Women Perfume"
+        category: "Women’s Clothing"
     },
     {
         id: 3,
-        name: "Mystic Loban Premium",
-        price: 449,
-        originalPrice: 699,
-        rating: 4.7,
-        reviews: 234,
-        image: "https://images.unsplash.com/photo-1513094735237-8f2714d57c13?w=800&q=80&fit=crop",
-        category: "Loban"
-    },
-    {
-        id: 4,
-        name: "Lavender Agarbatti Pack",
-        price: 199,
-        originalPrice: 299,
-        rating: 4.5,
-        reviews: 421,
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop",
-        badge: "Hot Deal",
-        category: "Agarbatti"
-    },
-    {
-        id: 5,
-        name: "Ocean Breeze Car Perfume",
-        price: 349,
-        originalPrice: 599,
-        rating: 4.4,
-        reviews: 167,
-        image: "https://images.unsplash.com/photo-1585652757173-57de5e9fab42?w=800&q=80&fit=crop",
-        category: "Car Perfume"
-    },
-    {
-        id: 6,
-        name: "Unisex Combo Pack (3 pcs)",
-        price: 2499,
-        originalPrice: 3999,
-        rating: 4.9,
-        reviews: 98,
-        image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&q=80&fit=crop",
-        badge: "Combo",
-        category: "Product Combo"
-    },
-    {
-        id: 7,
-        name: "Sandalwood Essence",
+        name: "Kids Cartoon T‑Shirt",
         price: 799,
         originalPrice: 1199,
         rating: 4.7,
+        reviews: 301,
+        image: "https://source.unsplash.com/800x800/?kids,tshirt",
+        category: "Kids Clothing"
+    },
+    {
+        id: 4,
+        name: "Office Slim Fit Shirt",
+        price: 1999,
+        originalPrice: 2799,
+        rating: 4.5,
+        reviews: 421,
+        image: "https://source.unsplash.com/800x800/?shirt,office",
+        badge: "Hot Deal",
+        category: "Formal Wear"
+    },
+    {
+        id: 5,
+        name: "Cozy Loungewear Set",
+        price: 1599,
+        originalPrice: 2199,
+        rating: 4.4,
+        reviews: 167,
+        image: "https://source.unsplash.com/800x800/?loungewear,cozy",
+        category: "Loungewear"
+    },
+    {
+        id: 6,
+        name: "Ethnic Kurta Combo",
+        price: 3499,
+        originalPrice: 4999,
+        rating: 4.9,
+        reviews: 98,
+        image: "https://source.unsplash.com/800x800/?ethnic,kurta",
+        badge: "Combo",
+        category: "Ethnic Wear"
+    },
+    {
+        id: 7,
+        name: "Casual Hoodie",
+        price: 2299,
+        originalPrice: 2999,
+        rating: 4.7,
         reviews: 145,
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80&fit=crop",
-        category: "Unisex Perfume"
+        image: "https://source.unsplash.com/800x800/?hoodie,casual",
+        category: "Casual Wear"
     },
     {
         id: 8,
-        name: "Citrus Burst Premium",
-        price: 1099,
-        originalPrice: 1699,
+        name: "Silk Tie Pack",
+        price: 499,
+        originalPrice: 799,
         rating: 4.6,
         reviews: 203,
-        image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80&fit=crop",
+        image: "https://source.unsplash.com/800x800/?silk,tie",
         badge: "Trending",
-        category: "Men Perfume"
+        category: "Accessories"
     }
 ];
 function ProductSection({ title = "Featured Products", products = sampleProducts, viewAllLink = "/products" }) {
@@ -1243,7 +1243,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                     children: "Premium Collection"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
-                                    lineNumber: 118,
+                                    lineNumber: 110,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1251,20 +1251,20 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
-                                    lineNumber: 121,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "h-1 w-24 bg-[var(--primary)] rounded-full"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
-                                    lineNumber: 124,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/home/ProductSection.js",
-                            lineNumber: 117,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1277,19 +1277,19 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                     className: "group-hover:translate-x-2 transition-transform"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
-                                    lineNumber: 132,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/home/ProductSection.js",
-                            lineNumber: 127,
+                            lineNumber: 119,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/home/ProductSection.js",
-                    lineNumber: 113,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1301,17 +1301,17 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                 product: product
                             }, void 0, false, {
                                 fileName: "[project]/components/home/ProductSection.js",
-                                lineNumber: 147,
+                                lineNumber: 139,
                                 columnNumber: 15
                             }, this)
                         }, product.id, false, {
                             fileName: "[project]/components/home/ProductSection.js",
-                            lineNumber: 142,
+                            lineNumber: 134,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/home/ProductSection.js",
-                    lineNumber: 140,
+                    lineNumber: 132,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1325,29 +1325,29 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                 size: 20
                             }, void 0, false, {
                                 fileName: "[project]/components/home/ProductSection.js",
-                                lineNumber: 159,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/home/ProductSection.js",
-                        lineNumber: 154,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/home/ProductSection.js",
-                    lineNumber: 153,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/home/ProductSection.js",
-            lineNumber: 111,
+            lineNumber: 103,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/home/ProductSection.js",
-        lineNumber: 110,
+        lineNumber: 102,
         columnNumber: 5
     }, this);
 }
@@ -1474,7 +1474,7 @@ function FeaturesSection() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-[#5a4a3a] text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light",
-                                children: "Experience boutique clothing with unmatched quality and service"
+                                children: "Experience boutique clothes with unmatched quality and service"
                             }, void 0, false, {
                                 fileName: "[project]/components/home/FeaturesSection.js",
                                 lineNumber: 75,
@@ -1601,7 +1601,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 'use client';
 ;
 function ScrollingText() {
-    const text = "Premium Fragrances • Authentic Products • Luxury Scents • Best Quality • ";
+    const text = "Designer Cloths • Trendy Styles • Best Fabrics • Perfect Fit • ";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         "data-aos": "fade",
         className: "relative bg-[var(--primary)] overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]",
@@ -1674,7 +1674,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 ;
 ;
 ;
-function CenterBanner({ title = "Discover Our Signature Scents", subtitle = "Signature Collection", description = "Handcrafted blends made from premium ingredients — crafted to leave a lasting impression.", ctaText = "Explore Collection", ctaLink = "/collection/signature", image = "/image/center_bg_img_copy.png", align = "right" }) {
+function CenterBanner({ title = "Step Into Style", subtitle = "New Arrivals", description = "Browse the latest cloths crafted with care—fresh designs that make a statement.", ctaText = "Shop Now", ctaLink = "/products", image = "https://source.unsplash.com/1600x900/?fashion,clothes", align = "right" }) {
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [inView, setInView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{

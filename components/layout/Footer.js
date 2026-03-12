@@ -31,8 +31,8 @@ export default function Footer() {
                 </h3>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
-                Premium fragrances that define elegance and luxury. Experience
-                the essence of sophistication.
+                Premium cloths that define elegance and luxury. Experience
+                style with every stitch.
               </p>
               <div className="flex gap-3">
                 <a href="#" className="social-icon">
@@ -71,8 +71,8 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="footer-link">
-                    Blog
+                  <Link href="/shop" className="footer-link">
+                    Shop
                   </Link>
                 </li>
                 <li>
@@ -90,27 +90,27 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link href="/category/men" className="footer-link">
-                    Men Perfume
+                    Men Clothing
                   </Link>
                 </li>
                 <li>
                   <Link href="/category/women" className="footer-link">
-                    Women Perfume
+                    Women Clothing
                   </Link>
                 </li>
                 <li>
                   <Link href="/category/unisex" className="footer-link">
-                    Unisex
+                    Unisex Clothing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/category/agarbatti" className="footer-link">
-                    Agarbatti
+                  <Link href="/category/formal" className="footer-link">
+                    Formal Wear
                   </Link>
                 </li>
                 <li>
-                  <Link href="/category/combo" className="footer-link">
-                    Combo Packs
+                  <Link href="/category/casual" className="footer-link">
+                    Casual Wear
                   </Link>
                 </li>
               </ul>
@@ -127,7 +127,7 @@ export default function Footer() {
                     className="text-[var(--secondary)] mt-1 flex-shrink-0"
                   />
                   <span className="text-gray-400 text-sm">
-                    123 Fragrance Street, Mumbai, India
+                    123 Fashion Ave, Mumbai, India
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -148,10 +148,10 @@ export default function Footer() {
                     className="text-[var(--secondary)] flex-shrink-0"
                   />
                   <a
-                    href="mailto:info@zarnith.com"
+                    href="mailto:info@fashion.com"
                     className="text-gray-400 text-sm hover:text-white transition-colors"
                   >
-                    info@zarnith.com
+                    info@fashion.com
                   </a>
                 </li>
               </ul>

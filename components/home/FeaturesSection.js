@@ -73,7 +73,7 @@ export default function FeaturesSection() {
           </h2>
 
           <p className="text-[#5a4a3a] text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            Experience boutique clothing with unmatched quality and service
+            Experience boutique clothes with unmatched quality and service
           </p>
         </div>
 
