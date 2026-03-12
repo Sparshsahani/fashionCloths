@@ -4,49 +4,35 @@
    CSS Variables - Theme Configuration
    =============================================== */
 :root {
-    /* Primary Brand Colors */
-    --primary: #c19a6b;
-    --primary-dark: #a07d53;
-    --primary-light: #d4b085;
-    --secondary: #c19a6b;
-    --accent: #8b7355;
-
-    /* Neutral Colors */
-    --white: #ffffff;
+    /* Core monochrome colors */
+    --white: #FFFFFF;
     --black: #000000;
-    --gray-50: #0a0a0a;
-    --gray-100: #1a1a1a;
-    --gray-200: #2a2a2a;
-    --gray-300: #3a3a3a;
-    --gray-400: #4a4a4a;
-    --gray-500: #6b7280;
-    --gray-600: #9ca3af;
-    --gray-700: #d1d5db;
-    --gray-800: #e5e7eb;
-    --gray-900: #f3f4f6;
 
-    /* Fonts */
+    /* Text colors */
+    --text-primary: var(--black);
+    /* kept for backwards compatibility; primary now black */
+    --primary: var(--black);
+    /* grayscale shades for primary variants */
+    --primary-dark: var(--gray-800);
+    --primary-light: var(--gray-700);
+
+    /* Essential layout variables remain */
+    --container-max-width: 1400px;
+    --header-height: 80px;
     --font-primary: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
     --font-secondary: var(--font-geist-mono), monospace;
 
-    /* Spacing */
-    --container-max-width: 1400px;
-    --header-height: 80px;
-
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-
-    /* Border Radius */
+    /* radius and shadows kept */
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
     --radius-xl: 16px;
     --radius-full: 9999px;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 
-    /* Transitions */
     --transition-fast: 150ms ease-in-out;
     --transition-base: 250ms ease-in-out;
     --transition-slow: 350ms ease-in-out;
