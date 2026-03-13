@@ -1736,7 +1736,7 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-function CenterBanner({ title = "Step Into Style", subtitle = "New Fashion Drops", description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.", ctaText = "Shop Now", ctaLink = "/products", image = '/image/blue-cloths.jpg', align = "right" }) {
+function CenterBanner({ title = "Step Into Style", subtitle = "New Fashion Drops", description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.", ctaText = "Shop Now", ctaLink = "/products", image = '/image/bg-img-1.jpg', align = "right" }) {
     _s();
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [inView, setInView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);

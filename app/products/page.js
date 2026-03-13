@@ -213,7 +213,7 @@ export default function ProductsPage() {
           />
         </div>
         {/* Golden Overlay */}
-        <div className="absolute inset-0 bg-[#c19a6b] opacity-20"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
 
         <div className="relative max-w-7xl mx-auto px-4">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">

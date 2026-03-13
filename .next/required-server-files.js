@@ -106,7 +106,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "E:\\Freelancing\\Cloths",
+    "outputFileTracingRoot": "C:\\Users\\Sparsh\\Downloads\\freelancing\\fashionCloths",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -163,7 +163,7 @@ self.__SERVER_FILES_MANIFEST={
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 19,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -299,11 +299,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "E:\\Freelancing\\Cloths"
+      "root": "C:\\Users\\Sparsh\\Downloads\\freelancing\\fashionCloths"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "E:\\Freelancing\\Cloths",
+  "appDir": "C:\\Users\\Sparsh\\Downloads\\freelancing\\fashionCloths",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

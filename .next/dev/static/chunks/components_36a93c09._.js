@@ -25,7 +25,7 @@ const slides = [
         subtitle: "Premium Clothing Collection",
         description: "Experience the epitome of style with our handcrafted garments",
         link: "/category/all",
-        image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "New Arrival"
     },
     {
@@ -34,7 +34,7 @@ const slides = [
         subtitle: "Men's Apparel",
         description: "Commanding outfits that define modern masculinity",
         link: "/category/men",
-        image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "Best Seller"
     },
     {
@@ -43,7 +43,7 @@ const slides = [
         subtitle: "Exclusive Combo Sets",
         description: "Curated clothing collections at extraordinary prices - While stocks last",
         link: "/category/combo",
-        image: "https://images.unsplash.com/photo-1495121605193-b116b5b573c8?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "Save 40%"
     }
 ];
@@ -1002,7 +1002,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-center bg-cover transition-transform duration-700 ease-out group-hover:scale-105",
                         style: {
-                            backgroundImage: `url(${image || 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800'})`
+                            backgroundImage: `url(${image || '/image/blue-cloths.jpg'})`
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -1190,7 +1190,7 @@ const sampleProducts = [
         originalPrice: 3999,
         rating: 4.8,
         reviews: 212,
-        image: "https://source.unsplash.com/800x800/?denim,jacket",
+        image: '/image/blue-cloths.jpg',
         badge: "Best Seller",
         category: "Outerwear"
     },
@@ -1201,7 +1201,7 @@ const sampleProducts = [
         originalPrice: 3499,
         rating: 4.6,
         reviews: 158,
-        image: "https://source.unsplash.com/800x800/?summer-dress,floral",
+        image: '/image/blue-cloths.jpg',
         badge: "New",
         category: "Women’s Clothing"
     },
@@ -1212,7 +1212,7 @@ const sampleProducts = [
         originalPrice: 1199,
         rating: 4.7,
         reviews: 301,
-        image: "https://source.unsplash.com/800x800/?kids,tshirt",
+        image: '/image/blue-cloths.jpg',
         category: "Kids Clothing"
     },
     {
@@ -1222,7 +1222,7 @@ const sampleProducts = [
         originalPrice: 2799,
         rating: 4.5,
         reviews: 421,
-        image: "https://source.unsplash.com/800x800/?shirt,office",
+        image: '/image/blue-cloths.jpg',
         badge: "Hot Deal",
         category: "Formal Wear"
     },
@@ -1233,7 +1233,7 @@ const sampleProducts = [
         originalPrice: 2199,
         rating: 4.4,
         reviews: 167,
-        image: "https://source.unsplash.com/800x800/?loungewear,cozy",
+        image: '/image/blue-cloths.jpg',
         category: "Loungewear"
     },
     {
@@ -1243,7 +1243,7 @@ const sampleProducts = [
         originalPrice: 4999,
         rating: 4.9,
         reviews: 98,
-        image: "https://source.unsplash.com/800x800/?ethnic,kurta",
+        image: '/image/blue-cloths.jpg',
         badge: "Combo",
         category: "Ethnic Wear"
     },
@@ -1254,7 +1254,7 @@ const sampleProducts = [
         originalPrice: 2999,
         rating: 4.7,
         reviews: 145,
-        image: "https://source.unsplash.com/800x800/?hoodie,casual",
+        image: '/image/blue-cloths.jpg',
         category: "Casual Wear"
     },
     {
@@ -1264,7 +1264,7 @@ const sampleProducts = [
         originalPrice: 799,
         rating: 4.6,
         reviews: 203,
-        image: "https://source.unsplash.com/800x800/?silk,tie",
+        image: '/image/blue-cloths.jpg',
         badge: "Trending",
         category: "Accessories"
     }

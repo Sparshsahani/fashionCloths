@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AOSInit from "@/components/AOSInit";
 import Newsletter from "@/components/home/Newsletter";
+import Testimonials from "@/components/home/Testimonials";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         {/* Newsletter Section (animated component) */}
+        <Testimonials/>
         <Newsletter />
         <Footer />
       </body>

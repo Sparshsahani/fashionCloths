@@ -9,7 +9,7 @@ export default function CenterBanner({
   description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.",
   ctaText = "Shop Now",
   ctaLink = "/products",
-  image = '/image/blue-cloths.jpg',
+  image = '/image/bg-img-1.jpg',
   align = "right",
 }) {
   const ref = useRef(null);

@@ -132,26 +132,26 @@ export default function ProductDetailPage({ params }) {
   };
 
   return (
-    <main className="bg-black min-h-screen">
+    <main className="bg-white min-h-screen">
       {/* Breadcrumb */}
-      <div className="bg-zinc-900 border border-zinc-800 border-b border-white/10">
+      <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center gap-2 text-sm">
             <Link
               href="/"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-500 hover:text-black transition-colors"
             >
               Home
             </Link>
-            <span className="text-gray-600">/</span>
+            <span className="text-gray-400">/</span>
             <Link
               href="/products"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-500 hover:text-black transition-colors"
             >
               Products
             </Link>
-            <span className="text-gray-600">/</span>
-            <span className="text-white">{product.name}</span>
+            <span className="text-gray-400">/</span>
+            <span className="text-black">{product.name}</span>
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@ export default function ProductDetailPage({ params }) {
           {/* Left: Images Gallery */}
           <div className="space-y-4">
             {/* Main Image */}
-            <div className="relative bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden aspect-square">
+            <div className="relative bg-gray-100 border border-gray-200 rounded-lg overflow-hidden aspect-square">
               <img
                 src={product.images[selectedImage]}
                 alt={product.name}
@@ -181,10 +181,10 @@ export default function ProductDetailPage({ params }) {
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`relative bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden aspect-square border-2 transition-all ${
+                  className={`relative bg-gray-100 border border-gray-200 rounded-lg overflow-hidden aspect-square border-2 transition-all ${
                     selectedImage === index
-                      ? "border-white"
-                      : "border-transparent hover:border-white/20"
+                      ? "border-black"
+                      : "border-transparent hover:border-black/20"
                   }`}
                 >
                   <img
@@ -201,15 +201,15 @@ export default function ProductDetailPage({ params }) {
           <div className="space-y-6">
             {/* Category & Brand */}
             <div className="flex items-center gap-3 text-sm">
-              <span className="text-white font-semibold uppercase tracking-wide">
+              <span className="text-black font-semibold uppercase tracking-wide">
                 {product.category}
               </span>
-              <span className="text-gray-600">|</span>
-              <span className="text-gray-400">{product.brand}</span>
+              <span className="text-gray-400">|</span>
+              <span className="text-gray-600">{product.brand}</span>
             </div>
 
             {/* Product Name */}
-            <h1 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+            <h1 className="text-3xl md:text-4xl font-bold text-black leading-tight">
               {product.name}
             </h1>
 
@@ -221,22 +221,22 @@ export default function ProductDetailPage({ params }) {
                     <IconStarFilled
                       key={i}
                       size={18}
-                      className="text-white"
+                      className="text-yellow-500"
                     />
                   ) : (
-                    <IconStar key={i} size={18} className="text-gray-600" />
+                    <IconStar key={i} size={18} className="text-gray-300" />
                   ),
                 )}
               </div>
-              <span className="text-white font-semibold">{product.rating}</span>
-              <span className="text-gray-400 text-sm">
+              <span className="text-black font-semibold">{product.rating}</span>
+              <span className="text-gray-500 text-sm">
                 ({product.reviews} reviews)
               </span>
             </div>
 
             {/* Price */}
             <div className="flex items-baseline gap-3">
-              <span className="text-4xl font-bold text-white">
+              <span className="text-4xl font-bold text-black">
                 ₹{product.price}
               </span>
               {product.originalPrice && (
@@ -267,27 +267,27 @@ export default function ProductDetailPage({ params }) {
             </div>
 
             {/* Description */}
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed">
               {product.description}
             </p>
 
             {/* Quantity Selector */}
             <div className="space-y-3">
-              <label className="text-white font-semibold">Quantity</label>
+              <label className="text-black font-semibold">Quantity</label>
               <div className="flex items-center gap-4">
-                <div className="flex items-center border border-white/20 rounded-lg overflow-hidden">
+                <div className="flex items-center border  rounded-lg overflow-hidden">
                   <button
                     onClick={decreaseQuantity}
-                    className="px-4 py-3 bg-zinc-900 border border-zinc-800 text-white hover:bg-white text-black hover:text-black transition-colors"
+                    className="px-4 py-3 bg-[#B8A898] border border-[#B8A898] text-black hover:bg-black hover:text-white transition-colors"
                   >
                     <IconMinus size={18} />
                   </button>
-                  <span className="px-6 py-3 bg-black text-white font-semibold">
+                  <span className="px-6 py-3 bg-white text-black border rounded font-semibold">
                     {quantity}
                   </span>
                   <button
                     onClick={increaseQuantity}
-                    className="px-4 py-3 bg-zinc-900 border border-zinc-800 text-white hover:bg-white text-black hover:text-black transition-colors"
+                    className="px-4 py-3 bg-[#B8A898] border border-[#B8A898] text-black hover:bg-black hover:text-white transition-colors"
                   >
                     <IconPlus size={18} />
                   </button>
@@ -297,7 +297,7 @@ export default function ProductDetailPage({ params }) {
 
             {/* Action Buttons */}
             <div className="flex gap-3">
-              <button className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white text-black text-black font-bold rounded-lg hover:bg-gray-200 transition-all">
+              <button className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-[#B8A898] text-black font-bold rounded-lg hover:bg-[#a8968a] transition-all">
                 <IconShoppingCart size={20} />
                 Add to Cart
               </button>
@@ -305,8 +305,8 @@ export default function ProductDetailPage({ params }) {
                 onClick={() => setIsWishlisted(!isWishlisted)}
                 className={`px-4 py-4 border rounded-lg transition-all ${
                   isWishlisted
-                    ? "bg-white text-black border-white text-black"
-                    : "border-white/20 text-white hover:border-white"
+                    ? "bg-black text-white border-black"
+                    : "bg-[#B8A898] border-[#B8A898] text-black hover:bg-[#a8968a]"
                 }`}
               >
                 <IconHeart
@@ -318,38 +318,38 @@ export default function ProductDetailPage({ params }) {
 
             {/* Features */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
-              <div className="flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg">
+              <div className="flex items-start gap-3 p-4 bg-[#D4C5AF] border border-gray-200 rounded-lg">
                 <IconTruck
                   size={24}
-                  className="text-[var(--white)] flex-shrink-0 mt-1"
+                  className="text-black flex-shrink-0 mt-1"
                 />
                 <div>
-                  <p className="text-white font-semibold text-sm">
+                  <p className="text-black font-semibold text-sm">
                     Free Delivery
                   </p>
-                  <p className="text-gray-400 text-xs">On orders above ₹999</p>
+                  <p className="text-gray-600 text-xs">On orders above ₹999</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg">
+              <div className="flex items-start gap-3 p-4 bg-[#D4C5AF] border border-gray-200 rounded-lg">
                 <IconShieldCheck
                   size={24}
-                  className="text-[var(--white)] flex-shrink-0 mt-1"
+                  className="text-black flex-shrink-0 mt-1"
                 />
                 <div>
-                  <p className="text-white font-semibold text-sm">Authentic</p>
-                  <p className="text-gray-400 text-xs">100% genuine products</p>
+                  <p className="text-black font-semibold text-sm">Authentic</p>
+                  <p className="text-gray-600 text-xs">100% genuine products</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg">
+              <div className="flex items-start gap-3 p-4 bg-[#D4C5AF] border border-gray-200 rounded-lg">
                 <IconRefresh
                   size={24}
-                  className="text-[var(--white)] flex-shrink-0 mt-1"
+                  className="text-black flex-shrink-0 mt-1"
                 />
                 <div>
-                  <p className="text-white font-semibold text-sm">
+                  <p className="text-black font-semibold text-sm">
                     Easy Returns
                   </p>
-                  <p className="text-gray-400 text-xs">7-day return policy</p>
+                  <p className="text-gray-600 text-xs">7-day return policy</p>
                 </div>
               </div>
             </div>
@@ -359,44 +359,44 @@ export default function ProductDetailPage({ params }) {
         {/* Tabs Section */}
         <div className="mt-12 md:mt-16">
           {/* Tab Headers */}
-          <div className="flex gap-6 border-b border-white/10">
+          <div className="flex gap-6 border-b border-gray-200">
             <button
               onClick={() => setActiveTab("description")}
               className={`pb-4 font-semibold transition-colors relative ${
                 activeTab === "description"
-                  ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  ? "text-black"
+                  : "text-gray-500 hover:text-black"
               }`}
             >
               Description
               {activeTab === "description" && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-black"></span>
               )}
             </button>
             <button
               onClick={() => setActiveTab("notes")}
               className={`pb-4 font-semibold transition-colors relative ${
                 activeTab === "notes"
-                  ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  ? "text-black"
+                  : "text-gray-500 hover:text-black"
               }`}
             >
               Fabric Details
               {activeTab === "notes" && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-black"></span>
               )}
             </button>
             <button
               onClick={() => setActiveTab("reviews")}
               className={`pb-4 font-semibold transition-colors relative ${
                 activeTab === "reviews"
-                  ? "text-white"
-                  : "text-gray-400 hover:text-white"
+                  ? "text-black"
+                  : "text-gray-500 hover:text-black"
               }`}
             >
               Reviews ({product.reviews})
               {activeTab === "reviews" && (
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"></span>
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-black"></span>
               )}
             </button>
           </div>
@@ -405,22 +405,22 @@ export default function ProductDetailPage({ params }) {
           <div className="py-8">
             {activeTab === "description" && (
               <div className="space-y-6">
-                <div className="prose prose-invert max-w-none">
-                  <p className="text-gray-300 leading-relaxed whitespace-pre-line">
+                <div className="prose max-w-none">
+                  <p className="text-gray-700 leading-relaxed whitespace-pre-line">
                     {product.fullDescription}
                   </p>
                 </div>
                 <div className="mt-8">
-                  <h3 className="text-xl font-bold text-white mb-4">
+                  <h3 className="text-xl font-bold text-black mb-4">
                     Key Features
                   </h3>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {product.features.map((feature, index) => (
                       <li
                         key={index}
-                        className="flex items-center gap-3 text-gray-300"
+                        className="flex items-center gap-3 text-gray-700"
                       >
-                        <span className="w-1.5 h-1.5 bg-white text-black rounded-full"></span>
+                        <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
                         {feature}
                       </li>
                     ))}
@@ -431,49 +431,49 @@ export default function ProductDetailPage({ params }) {
 
             {activeTab === "notes" && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg">
-                  <h3 className="text-white font-bold mb-4">
+                <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
+                  <h3 className="text-black font-bold mb-4">
                     Compositions
                   </h3>
                   <ul className="space-y-2">
                     {product.notes.composition.map((note, index) => (
                       <li
                         key={index}
-                        className="text-gray-300 flex items-center gap-2"
+                        className="text-gray-700 flex items-center gap-2"
                       >
-                        <span className="w-1.5 h-1.5 bg-white text-black rounded-full"></span>
+                        <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
                         {note}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg">
-                  <h3 className="text-white font-bold mb-4">
+                <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
+                  <h3 className="text-black font-bold mb-4">
                     Care Instructions
                   </h3>
                   <ul className="space-y-2">
                     {product.notes.care.map((note, index) => (
                       <li
                         key={index}
-                        className="text-gray-300 flex items-center gap-2"
+                        className="text-gray-700 flex items-center gap-2"
                       >
-                        <span className="w-1.5 h-1.5 bg-white text-black rounded-full"></span>
+                        <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
                         {note}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="bg-zinc-900 border border-zinc-800 p-6 rounded-lg">
-                  <h3 className="text-white font-bold mb-4">
+                <div className="bg-gray-50 border border-gray-200 p-6 rounded-lg">
+                  <h3 className="text-black font-bold mb-4">
                     Fit & Sizing
                   </h3>
                   <ul className="space-y-2">
                     {product.notes.fit.map((note, index) => (
                       <li
                         key={index}
-                        className="text-gray-300 flex items-center gap-2"
+                        className="text-gray-700 flex items-center gap-2"
                       >
-                        <span className="w-1.5 h-1.5 bg-white text-black rounded-full"></span>
+                        <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
                         {note}
                       </li>
                     ))}
@@ -485,7 +485,7 @@ export default function ProductDetailPage({ params }) {
             {activeTab === "reviews" && (
               <div className="space-y-6">
                 <div className="text-center py-12">
-                  <p className="text-gray-400">
+                  <p className="text-gray-600">
                     Customer reviews feature coming soon!
                   </p>
                 </div>
@@ -496,7 +496,7 @@ export default function ProductDetailPage({ params }) {
 
         {/* Related Products */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-white mb-8">
+          <h2 className="text-3xl font-bold text-black mb-8">
             You May Also Like
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">

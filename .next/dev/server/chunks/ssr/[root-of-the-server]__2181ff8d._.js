@@ -195,7 +195,7 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$componen
 }),
 "[project]/components/home/CenterBanner.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-const e = new Error("Could not parse module '[project]/components/home/CenterBanner.js'\n\nUnexpected token `string literal`. Expected yield, an identifier, [ or {");
+const e = new Error("Could not parse module '[project]/components/home/CenterBanner.js'\n\nExpected ',', got '-'");
 e.code = 'MODULE_UNPARSABLE';
 throw e;
 }),
@@ -252,7 +252,7 @@ function Home() {
                 description: "Check out the latest cloths dropped this season — styles that speak for you.",
                 ctaText: "Shop New Arrivals",
                 ctaLink: "/products/new",
-                image: "https://source.unsplash.com/1600x900/?new,clothes",
+                image: "/image/bg-img-2.jpg",
                 align: "left"
             }, void 0, false, {
                 fileName: "[project]/app/page.js",

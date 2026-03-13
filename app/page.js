@@ -5,6 +5,7 @@ import FeaturesSection from "@/components/home/FeaturesSection";
 import ScrollingText from "@/components/home/ScrollingText";
 import CenterBanner from "@/components/home/CenterBanner";
 import Newsletter from "@/components/home/Newsletter";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         description="Check out the latest cloths dropped this season — styles that speak for you."
         ctaText="Shop New Arrivals"
         ctaLink="/products/new"
-        image= '/image/blue-cloths.jpg'
+        image= '/image/bg-img-2.jpg'
         align="left"
       />
 
