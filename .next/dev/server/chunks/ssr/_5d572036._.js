@@ -27,24 +27,36 @@ function ProductFilter({ onFilterChange }) {
             label: 'All Categories'
         },
         {
-            value: 'perfume',
-            label: 'Perfumes'
+            value: 'outerwear',
+            label: 'Outerwear'
         },
         {
-            value: 'cologne',
-            label: 'Colognes'
+            value: "women's-clothing",
+            label: "Women's Clothing"
         },
         {
-            value: 'eau-de-toilette',
-            label: 'Eau de Toilette'
+            value: "men's-clothing",
+            label: "Men's Clothing"
         },
         {
-            value: 'eau-de-parfum',
-            label: 'Eau de Parfum'
+            value: 'kids-clothing',
+            label: 'Kids Clothing'
         },
         {
-            value: 'gift-sets',
-            label: 'Gift Sets'
+            value: 'formal-wear',
+            label: 'Formal Wear'
+        },
+        {
+            value: 'casual-wear',
+            label: 'Casual Wear'
+        },
+        {
+            value: 'ethnic-wear',
+            label: 'Ethnic Wear'
+        },
+        {
+            value: 'loungewear',
+            label: 'Loungewear'
         }
     ];
     const priceRanges = [
@@ -163,7 +175,7 @@ function ProductFilter({ onFilterChange }) {
                                     size: 18
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 92,
+                                    lineNumber: 95,
                                     columnNumber: 13
                                 }, this),
                                 "Filters",
@@ -172,13 +184,13 @@ function ProductFilter({ onFilterChange }) {
                                     children: activeFiltersCount
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 95,
+                                    lineNumber: 98,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 88,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -190,18 +202,18 @@ function ProductFilter({ onFilterChange }) {
                                     children: option.label
                                 }, option.value, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 108,
+                                    lineNumber: 111,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 102,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/common/ProductFilter.js",
-                    lineNumber: 87,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -214,7 +226,7 @@ function ProductFilter({ onFilterChange }) {
                             onChange: (value)=>handleFilterChange('category', value)
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 118,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FilterDropdown, {
@@ -224,7 +236,7 @@ function ProductFilter({ onFilterChange }) {
                             onChange: (value)=>handleFilterChange('price', value)
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 126,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(FilterDropdown, {
@@ -234,7 +246,7 @@ function ProductFilter({ onFilterChange }) {
                             onChange: (value)=>handleFilterChange('rating', value)
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 134,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -245,7 +257,7 @@ function ProductFilter({ onFilterChange }) {
                                     children: "Sort by:"
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 143,
+                                    lineNumber: 146,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -257,18 +269,18 @@ function ProductFilter({ onFilterChange }) {
                                             children: option.label
                                         }, option.value, false, {
                                             fileName: "[project]/components/common/ProductFilter.js",
-                                            lineNumber: 150,
+                                            lineNumber: 153,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 144,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 142,
+                            lineNumber: 145,
                             columnNumber: 11
                         }, this),
                         activeFiltersCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -279,20 +291,20 @@ function ProductFilter({ onFilterChange }) {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 163,
+                                    lineNumber: 166,
                                     columnNumber: 15
                                 }, this),
                                 "Clear All"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 159,
+                            lineNumber: 162,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/common/ProductFilter.js",
-                    lineNumber: 116,
+                    lineNumber: 119,
                     columnNumber: 9
                 }, this),
                 isFilterOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -305,7 +317,7 @@ function ProductFilter({ onFilterChange }) {
                                     children: "Category"
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 174,
+                                    lineNumber: 177,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -317,18 +329,18 @@ function ProductFilter({ onFilterChange }) {
                                             children: option.label
                                         }, option.value, false, {
                                             fileName: "[project]/components/common/ProductFilter.js",
-                                            lineNumber: 181,
+                                            lineNumber: 184,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 175,
+                                    lineNumber: 178,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 173,
+                            lineNumber: 176,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -338,7 +350,7 @@ function ProductFilter({ onFilterChange }) {
                                     children: "Price Range"
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 190,
+                                    lineNumber: 193,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -350,18 +362,18 @@ function ProductFilter({ onFilterChange }) {
                                             children: option.label
                                         }, option.value, false, {
                                             fileName: "[project]/components/common/ProductFilter.js",
-                                            lineNumber: 197,
+                                            lineNumber: 200,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 191,
+                                    lineNumber: 194,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 189,
+                            lineNumber: 192,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -371,7 +383,7 @@ function ProductFilter({ onFilterChange }) {
                                     children: "Rating"
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 206,
+                                    lineNumber: 209,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -383,18 +395,18 @@ function ProductFilter({ onFilterChange }) {
                                             children: option.label
                                         }, option.value, false, {
                                             fileName: "[project]/components/common/ProductFilter.js",
-                                            lineNumber: 213,
+                                            lineNumber: 216,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductFilter.js",
-                                    lineNumber: 207,
+                                    lineNumber: 210,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 205,
+                            lineNumber: 208,
                             columnNumber: 13
                         }, this),
                         activeFiltersCount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -403,24 +415,24 @@ function ProductFilter({ onFilterChange }) {
                             children: "Clear All Filters"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductFilter.js",
-                            lineNumber: 222,
+                            lineNumber: 225,
                             columnNumber: 15
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/common/ProductFilter.js",
-                    lineNumber: 171,
+                    lineNumber: 174,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/common/ProductFilter.js",
-            lineNumber: 85,
+            lineNumber: 88,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/common/ProductFilter.js",
-        lineNumber: 84,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }
@@ -441,13 +453,13 @@ function FilterDropdown({ label, value, options, onChange }) {
                         className: `transition-transform ${isOpen ? 'rotate-180' : ''}`
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductFilter.js",
-                        lineNumber: 252,
+                        lineNumber: 255,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/common/ProductFilter.js",
-                lineNumber: 243,
+                lineNumber: 246,
                 columnNumber: 7
             }, this),
             isOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -457,7 +469,7 @@ function FilterDropdown({ label, value, options, onChange }) {
                         onClick: ()=>setIsOpen(false)
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductFilter.js",
-                        lineNumber: 257,
+                        lineNumber: 260,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -471,12 +483,12 @@ function FilterDropdown({ label, value, options, onChange }) {
                                 children: option.label
                             }, option.value, false, {
                                 fileName: "[project]/components/common/ProductFilter.js",
-                                lineNumber: 260,
+                                lineNumber: 263,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductFilter.js",
-                        lineNumber: 258,
+                        lineNumber: 261,
                         columnNumber: 11
                     }, this)
                 ]
@@ -484,7 +496,7 @@ function FilterDropdown({ label, value, options, onChange }) {
         ]
     }, void 0, true, {
         fileName: "[project]/components/common/ProductFilter.js",
-        lineNumber: 242,
+        lineNumber: 245,
         columnNumber: 5
     }, this);
 }
@@ -517,7 +529,7 @@ function ProductCard({ product }) {
                 className: "absolute top-0 left-0 w-full p-2 md:p-3 flex justify-between items-start z-20 pointer-events-none",
                 children: [
                     badge ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-[var(--primary)] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
+                        className: "bg-[#D4C5AF] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
                         children: badge
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -595,7 +607,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 hidden md:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[var(--primary)] transition-colors",
+                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[#D4C5AF] transition-colors",
                             children: "Quick View"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductCard.js",
@@ -619,7 +631,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[9px] md:text-[10px] text-[var(--primary)] font-bold uppercase tracking-widest mb-1",
+                                className: "text-[9px] md:text-[10px] text-[#D4C5AF] font-bold uppercase tracking-widest mb-1",
                                 children: category
                             }, void 0, false, {
                                 fileName: "[project]/components/common/ProductCard.js",
@@ -713,7 +725,7 @@ function ProductCard({ product }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--primary)] hover:text-black transition-all",
+                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--white)] hover:text-black transition-all",
                         children: "Add to Cart"
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -759,29 +771,29 @@ const allProducts = [
         originalPrice: 3999,
         rating: 4.8,
         reviews: 234,
-        image: 'https://source.unsplash.com/800x800/?denim,jacket',
+        image: 'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=800&h=800&fit=crop',
         badge: 'New',
         category: 'Outerwear'
     },
     {
         id: 2,
-        name: 'Floral Maxi Dress',
+        name: 'Floral Wrap Maxi Dress',
         price: 2499,
         originalPrice: 3499,
         rating: 4.6,
         reviews: 189,
-        image: 'https://source.unsplash.com/800x800/?floral,dress',
+        image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&h=800&fit=crop',
         badge: 'Bestseller',
         category: "Women's Clothing"
     },
     {
         id: 3,
-        name: 'Kids Cartoon Tee',
+        name: 'Kids Printed Graphic Tee',
         price: 799,
         originalPrice: 1199,
         rating: 4.4,
         reviews: 156,
-        image: 'https://source.unsplash.com/800x800/?kids,tshirt',
+        image: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=800&h=800&fit=crop',
         badge: 'Sale',
         category: 'Kids Clothing'
     },
@@ -792,95 +804,95 @@ const allProducts = [
         originalPrice: 4999,
         rating: 4.9,
         reviews: 312,
-        image: 'https://source.unsplash.com/800x800/?silk,gown',
+        image: 'https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=800&h=800&fit=crop',
         badge: 'Premium',
         category: "Women's Clothing"
     },
     {
         id: 5,
-        name: 'Slim Fit Office Shirt',
+        name: "Men's Slim Fit Shirt",
         price: 1999,
-        originalPrice: null,
+        originalPrice: 2799,
         rating: 4.5,
         reviews: 98,
-        image: 'https://source.unsplash.com/800x800/?shirt,office',
+        image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&h=800&fit=crop',
         badge: null,
-        category: 'Formal Wear'
+        category: "Men's Clothing"
     },
     {
         id: 6,
-        name: 'Cozy Loungewear Set',
+        name: 'Cozy Fleece Loungewear Set',
         price: 1599,
         originalPrice: 2199,
         rating: 4.3,
         reviews: 145,
-        image: 'https://source.unsplash.com/800x800/?loungewear,cozy',
+        image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop',
         badge: null,
         category: 'Loungewear'
     },
     {
         id: 7,
-        name: 'Ethnic Kurta Ensemble',
+        name: 'Embroidered Kurta Set',
         price: 3499,
         originalPrice: 4999,
         rating: 4.9,
         reviews: 87,
-        image: 'https://source.unsplash.com/800x800/?ethnic,kurta',
+        image: 'https://images.unsplash.com/photo-1583391733956-6c78276477e3?w=800&h=800&fit=crop',
         badge: 'Limited',
         category: 'Ethnic Wear'
     },
     {
         id: 8,
-        name: 'Casual Hoodie',
+        name: 'Oversized Streetwear Hoodie',
         price: 2299,
         originalPrice: 2999,
         rating: 4.7,
         reviews: 203,
-        image: 'https://source.unsplash.com/800x800/?hoodie,casual',
+        image: 'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&h=800&fit=crop',
         badge: null,
         category: 'Casual Wear'
     },
     {
         id: 9,
-        name: 'Leather Boots',
+        name: "Men's Tapered Chino Trousers",
         price: 1799,
         originalPrice: 2499,
         rating: 4.6,
         reviews: 167,
-        image: 'https://source.unsplash.com/800x800/?leather,boots',
+        image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop',
         badge: 'New',
-        category: 'Accessories'
+        category: "Men's Clothing"
     },
     {
         id: 10,
-        name: 'Denim Shorts',
+        name: 'Distressed Denim Shorts',
         price: 999,
         originalPrice: 1499,
         rating: 4.8,
         reviews: 221,
-        image: 'https://source.unsplash.com/800x800/?denim,shorts',
+        image: 'https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=800&h=800&fit=crop',
         badge: 'Bestseller',
         category: 'Casual Wear'
     },
     {
         id: 11,
-        name: 'Summer Straw Hat',
-        price: 499,
-        originalPrice: 799,
+        name: "Women's Ribbed Crop Top",
+        price: 699,
+        originalPrice: 999,
         rating: 4.2,
         reviews: 134,
-        image: 'https://source.unsplash.com/800x800/?straw,hat',
+        image: 'https://images.unsplash.com/photo-1485462537746-965f33f49f93?w=800&h=800&fit=crop',
         badge: 'Sale',
-        category: 'Accessories'
+        category: "Women's Clothing"
     },
     {
         id: 12,
-        name: 'Coordinated Suit Set',
+        name: 'Tailored Two-Piece Blazer Set',
         price: 5999,
-        originalPrice: null,
+        originalPrice: 7999,
         rating: 4.7,
         reviews: 189,
-        image: 'https://source.unsplash.com/800x800/?suit,set',
+        image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop',
         badge: null,
         category: 'Formal Wear'
     }
@@ -939,7 +951,7 @@ function ProductsPage() {
         filters
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-        className: "bg-black min-h-screen",
+        className: "bg-[#D4C5AF]/80 min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative py-20 md:py-28 overflow-hidden min-h-[220px] md:min-h-[320px]",
@@ -949,7 +961,7 @@ function ProductsPage() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full h-full bg-cover bg-center",
                             style: {
-                                backgroundImage: "url('/image/product_bg.jpeg')"
+                                backgroundImage: "url('/image/cloths-img.jpg')"
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/products/page.js",
@@ -962,7 +974,7 @@ function ProductsPage() {
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-[#c19a6b] opacity-50"
+                        className: "absolute inset-0 bg-[#c19a6b] opacity-20"
                     }, void 0, false, {
                         fileName: "[project]/app/products/page.js",
                         lineNumber: 213,
@@ -972,7 +984,7 @@ function ProductsPage() {
                         className: "relative max-w-7xl mx-auto px-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl md:text-5xl font-bold text-black mb-4",
+                                className: "text-3xl md:text-5xl font-bold text-[#D4C5AF] mb-4",
                                 children: "All Products"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
@@ -981,7 +993,7 @@ function ProductsPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-gray-400 text-sm md:text-base",
-                                children: "Discover our complete collection of premium fragrances"
+                                children: "Elevate your everyday style with our exclusively curated clothing collection"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
                                 lineNumber: 219,
@@ -1012,7 +1024,7 @@ function ProductsPage() {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "mb-6",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-400 text-sm",
+                            className: "text-black text-sm",
                             children: [
                                 "Showing ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {

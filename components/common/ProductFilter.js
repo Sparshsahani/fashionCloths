@@ -12,11 +12,14 @@ export default function ProductFilter({ onFilterChange }) {
 
   const categories = [
     { value: 'all', label: 'All Categories' },
-    { value: 'perfume', label: 'Perfumes' },
-    { value: 'cologne', label: 'Colognes' },
-    { value: 'eau-de-toilette', label: 'Eau de Toilette' },
-    { value: 'eau-de-parfum', label: 'Eau de Parfum' },
-    { value: 'gift-sets', label: 'Gift Sets' },
+    { value: 'outerwear', label: 'Outerwear' },
+    { value: "women's-clothing", label: "Women's Clothing" },
+    { value: "men's-clothing", label: "Men's Clothing" },
+    { value: 'kids-clothing', label: 'Kids Clothing' },
+    { value: 'formal-wear', label: 'Formal Wear' },
+    { value: 'casual-wear', label: 'Casual Wear' },
+    { value: 'ethnic-wear', label: 'Ethnic Wear' },
+    { value: 'loungewear', label: 'Loungewear' },
   ];
 
   const priceRanges = [

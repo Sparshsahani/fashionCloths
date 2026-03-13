@@ -169,7 +169,7 @@ export default function Footer() {
           }
 
           .social-icon:hover {
-            background-color: #8b7355;
+            background-color: #D4C5AF;
             transform: translateY(-3px);
             color: white;
             box-shadow: 0 4px 12px rgba(193, 154, 107, 0.4);

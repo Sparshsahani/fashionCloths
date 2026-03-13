@@ -24,7 +24,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden bg-[#D4C5AF]">
+    <section className="py-20 md:py-28 relative overflow-hidden bg-gray-200">
       {/* subtle background blobs */}
       <div className="absolute -left-8 -top-8 w-72 h-72 bg-gradient-to-br from-[rgba(255,255,255,0.06)] to-[rgba(255,255,255,0.01)] rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute -right-16 bottom-8 w-56 h-56 bg-gradient-to-tr from-[rgba(166,126,59,0.06)] to-[rgba(255,255,255,0.01)] rounded-full blur-3xl pointer-events-none"></div>

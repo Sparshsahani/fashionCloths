@@ -99,7 +99,7 @@ export default function ProductSection({
   viewAllLink = "/products",
 }) {
   return (
-    <section className="py-20 md:py-28 bg-[#181717]">
+    <section className="py-20 md:py-28 bg-[#D4C5AF]">
       <div className="container">
         {/* Section Header */}
         <div
@@ -107,18 +107,18 @@ export default function ProductSection({
           data-aos="fade-up"
         >
           <div>
-            <p className="text-white text-sm font-bold uppercase tracking-wider mb-3">
+            <p className="text-black text-sm font-bold uppercase tracking-wider mb-3">
               Premium Collection
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-3">
               {title}
             </h2>
-            <div className="h-1 w-24 bg-white rounded-full"></div>
+            <div className="h-1 w-24 bg-black rounded-full"></div>
           </div>
 
           <Link
             href={viewAllLink}
-            className="hidden md:flex items-center gap-3 px-5 py-2 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 group"
+            className="hidden md:flex items-center gap-3 px-5 py-2 border-2 border-black text-black rounded-full font-bold hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 group"
           >
             View All
             <IconArrowRight
@@ -145,7 +145,7 @@ export default function ProductSection({
         <div className="md:hidden mt-8 text-center">
           <Link
             href={viewAllLink}
-            className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200"
+            className="inline-flex items-center gap-2 px-6 py-3 border-2 border-black text-black rounded-lg font-semibold hover:bg-black hover:text-white transition-all duration-200"
           >
             View All Products
             <IconArrowRight size={20} />

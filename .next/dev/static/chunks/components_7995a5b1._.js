@@ -72,25 +72,25 @@ function HeroBanner() {
             marginTop: "calc(var(--header-height) * -1)",
             paddingTop: "var(--header-height)"
         },
-        className: "jsx-5a8695ea085b9909" + " " + "relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden",
+        className: "jsx-8d5f1838f4e13750" + " " + "relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden",
         children: [
             slides.map((slide, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "jsx-5a8695ea085b9909" + " " + `absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`,
+                    className: "jsx-8d5f1838f4e13750" + " " + `absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-5a8695ea085b9909" + " " + "absolute inset-0",
+                            className: "jsx-8d5f1838f4e13750" + " " + "absolute inset-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: slide.image,
                                     alt: slide.title,
-                                    className: "jsx-5a8695ea085b9909" + " " + "w-full h-full object-cover"
+                                    className: "jsx-8d5f1838f4e13750" + " " + "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/HeroBanner.js",
                                     lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-5a8695ea085b9909" + " " + "absolute inset-0 bg-gradient-to-r from-black/95 via-black/75 to-black/40"
+                                    className: "jsx-8d5f1838f4e13750" + " " + "absolute inset-0 bg-gradient-to-r from-black/95 via-black/75 to-black/40"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/HeroBanner.js",
                                     lineNumber: 78,
@@ -103,16 +103,16 @@ function HeroBanner() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "jsx-5a8695ea085b9909" + " " + "relative h-full flex items-center py-20 md:py-24",
+                            className: "jsx-8d5f1838f4e13750" + " " + "relative h-full flex items-center py-20 md:py-24",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-5a8695ea085b9909" + " " + "container px-4 md:px-8",
+                                className: "jsx-8d5f1838f4e13750" + " " + "container px-4 md:px-8",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "jsx-5a8695ea085b9909" + " " + "max-w-3xl space-y-4 md:space-y-6",
+                                    className: "jsx-8d5f1838f4e13750" + " " + "max-w-3xl space-y-4 md:space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "100",
-                                            className: "jsx-5a8695ea085b9909" + " " + "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--white)] to-[var(--white)] rounded-full shadow-2xl",
+                                            className: "jsx-8d5f1838f4e13750" + " " + "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[var(--white)] to-[var(--white)] rounded-full shadow-2xl",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                                     size: 16,
@@ -123,7 +123,7 @@ function HeroBanner() {
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-5a8695ea085b9909" + " " + "text-[8px] md:text-[10px] font-semibold text-black uppercase tracking-wider",
+                                                    className: "jsx-8d5f1838f4e13750" + " " + "text-[8px] md:text-[10px] font-semibold text-black uppercase tracking-wider",
                                                     children: slide.tag
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/home/HeroBanner.js",
@@ -139,7 +139,7 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "200",
-                                            className: "jsx-5a8695ea085b9909" + " " + "text-white text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase",
+                                            className: "jsx-8d5f1838f4e13750" + " " + "text-white text-[16px] md:text-[18px] lg:text-[25px] font-semibold tracking-wide uppercase",
                                             children: slide.subtitle
                                         }, void 0, false, {
                                             fileName: "[project]/components/home/HeroBanner.js",
@@ -149,10 +149,10 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "300",
-                                            className: "jsx-5a8695ea085b9909" + " " + "text-[32px] md:text-[44px] lg:text-[56px] xl:text-[68px]  text-white font-extrabold  leading-tight",
+                                            className: "jsx-8d5f1838f4e13750" + " " + "text-[32px] md:text-[44px] lg:text-[56px] xl:text-[68px]  text-white font-extrabold  leading-tight",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-5a8695ea085b9909" + " " + "block",
+                                                    className: "jsx-8d5f1838f4e13750" + " " + "block",
                                                     children: slide.title.split(" ")[0]
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/home/HeroBanner.js",
@@ -160,7 +160,7 @@ function HeroBanner() {
                                                     columnNumber: 19
                                                 }, this),
                                                 slide.title.split(" ").length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "jsx-5a8695ea085b9909" + " " + "block",
+                                                    className: "jsx-8d5f1838f4e13750" + " " + "block",
                                                     children: slide.title.split(" ").slice(1).join(" ")
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/home/HeroBanner.js",
@@ -176,7 +176,7 @@ function HeroBanner() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             "data-aos": "fade-up",
                                             "data-aos-delay": "400",
-                                            className: "jsx-5a8695ea085b9909" + " " + "text-[14px] md:text-[16px] lg:text-[18px] text-white/80 max-w-2xl leading-relaxed font-light",
+                                            className: "jsx-8d5f1838f4e13750" + " " + "text-[14px] md:text-[16px] lg:text-[18px] text-white/80 max-w-2xl leading-relaxed font-light",
                                             children: slide.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/home/HeroBanner.js",
@@ -206,11 +206,11 @@ function HeroBanner() {
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-5a8695ea085b9909" + " " + "absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex gap-3 z-10",
+                className: "jsx-8d5f1838f4e13750" + " " + "absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 flex gap-3 z-10",
                 children: slides.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>goToSlide(index),
                         "aria-label": `Go to slide ${index + 1}`,
-                        className: "jsx-5a8695ea085b9909" + " " + `transition-all duration-300 ${index === currentSlide ? "w-12 md:w-16 h-2 bg-[var(--primary)] shadow-lg shadow-[var(--primary)]/50" : "w-2 h-2 bg-white/50 hover:bg-white/80"} rounded-full`
+                        className: "jsx-8d5f1838f4e13750" + " " + `transition-all duration-300 ${index === currentSlide ? "w-12 md:w-16 h-2 bg-[var(--primary)] shadow-lg shadow-[var(--primary)]/50" : "w-2 h-2 bg-white/50 hover:bg-white/80"} rounded-full`
                     }, index, false, {
                         fileName: "[project]/components/home/HeroBanner.js",
                         lineNumber: 137,
@@ -222,10 +222,10 @@ function HeroBanner() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-5a8695ea085b9909" + " " + "absolute bottom-8 md:bottom-12 right-8 md:right-12 hidden lg:flex flex-col items-center gap-3 animate-bounce",
+                className: "jsx-8d5f1838f4e13750" + " " + "absolute bottom-8 md:bottom-12 right-8 md:right-12 hidden lg:flex flex-col items-center gap-3 animate-bounce",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "jsx-5a8695ea085b9909" + " " + "text-white/60 text-[8px] font-semibold rotate-90 tracking-widest uppercase",
+                        className: "jsx-8d5f1838f4e13750" + " " + "text-white/60 text-[8px] font-semibold rotate-90 tracking-widest uppercase",
                         children: "Scroll"
                     }, void 0, false, {
                         fileName: "[project]/components/home/HeroBanner.js",
@@ -233,7 +233,7 @@ function HeroBanner() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-5a8695ea085b9909" + " " + "w-[2px] h-16 bg-gradient-to-b from-white/60 to-transparent"
+                        className: "jsx-8d5f1838f4e13750" + " " + "w-[2px] h-16 bg-gradient-to-b from-white/60 to-transparent"
                     }, void 0, false, {
                         fileName: "[project]/components/home/HeroBanner.js",
                         lineNumber: 155,
@@ -246,8 +246,8 @@ function HeroBanner() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$styled$2d$jsx$40$5$2e$1$2e$6_$40$babel$2b$core$40$7$2e$29$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                id: "5a8695ea085b9909",
-                children: "@keyframes slideUp{0%{opacity:0;transform:translateY(60px)}to{opacity:1;transform:translateY(0)}}.animate-slideUp.jsx-5a8695ea085b9909{animation:.9s ease-out slideUp}"
+                id: "8d5f1838f4e13750",
+                children: "@keyframes slideUp{0%{opacity:0;transform:translateY(60px)}to{opacity:1;transform:translateY(0)}}.animate-slideUp.jsx-8d5f1838f4e13750{animation:.9s ease-out slideUp}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
@@ -941,7 +941,7 @@ function ProductCard({ product }) {
                 className: "absolute top-0 left-0 w-full p-2 md:p-3 flex justify-between items-start z-20 pointer-events-none",
                 children: [
                     badge ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-[var(--primary)] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
+                        className: "bg-[#D4C5AF] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
                         children: badge
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -1019,7 +1019,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 hidden md:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[var(--primary)] transition-colors",
+                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[#D4C5AF] transition-colors",
                             children: "Quick View"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductCard.js",
@@ -1043,7 +1043,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[9px] md:text-[10px] text-[var(--primary)] font-bold uppercase tracking-widest mb-1",
+                                className: "text-[9px] md:text-[10px] text-[#D4C5AF] font-bold uppercase tracking-widest mb-1",
                                 children: category
                             }, void 0, false, {
                                 fileName: "[project]/components/common/ProductCard.js",
@@ -1137,7 +1137,7 @@ function ProductCard({ product }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--primary)] hover:text-black transition-all",
+                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--white)] hover:text-black transition-all",
                         children: "Add to Cart"
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -1271,7 +1271,7 @@ const sampleProducts = [
 ];
 function ProductSection({ title = "Featured Products", products = sampleProducts, viewAllLink = "/products" }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 md:py-28 bg-[#181717]",
+        className: "py-20 md:py-28 bg-[#D4C5AF]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container",
             children: [
@@ -1282,7 +1282,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-white text-sm font-bold uppercase tracking-wider mb-3",
+                                    className: "text-black text-sm font-bold uppercase tracking-wider mb-3",
                                     children: "Premium Collection"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
@@ -1290,7 +1290,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-4xl md:text-5xl font-bold text-white mb-3",
+                                    className: "text-4xl md:text-5xl font-bold text-black mb-3",
                                     children: title
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
@@ -1298,7 +1298,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "h-1 w-24 bg-white rounded-full"
+                                    className: "h-1 w-24 bg-black rounded-full"
                                 }, void 0, false, {
                                     fileName: "[project]/components/home/ProductSection.js",
                                     lineNumber: 116,
@@ -1312,7 +1312,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: viewAllLink,
-                            className: "hidden md:flex items-center gap-3 px-5 py-2 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 group",
+                            className: "hidden md:flex items-center gap-3 px-5 py-2 border-2 border-black text-black rounded-full font-bold hover:bg-black hover:text-white hover:scale-105 transition-all duration-300 group",
                             children: [
                                 "View All",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconArrowRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconArrowRight$3e$__["IconArrowRight"], {
@@ -1361,7 +1361,7 @@ function ProductSection({ title = "Featured Products", products = sampleProducts
                     className: "md:hidden mt-8 text-center",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: viewAllLink,
-                        className: "inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-black transition-all duration-200",
+                        className: "inline-flex items-center gap-2 px-6 py-3 border-2 border-black text-black rounded-lg font-semibold hover:bg-black hover:text-white transition-all duration-200",
                         children: [
                             "View All Products",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconArrowRight$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconArrowRight$3e$__["IconArrowRight"], {
@@ -1659,7 +1659,7 @@ function ScrollingText() {
     const text = "Stylish Apparel • Trendy Outfits • Quality Fabrics • Latest Fashion • ";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         "data-aos": "fade",
-        className: "relative bg-[var(--white)] overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]",
+        className: "relative bg-gray-300 overflow-hidden min-h-[280px] md:min-h-[380px] lg:min-h-[480px]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0 bg-black/10 z-0"
