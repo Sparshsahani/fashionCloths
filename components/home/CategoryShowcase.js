@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { IconArrowRight, IconSparkles, IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
@@ -79,32 +79,62 @@ const categories = [
   },
 ];
 
+const VISIBLE = 3;
+const TOTAL = categories.length; // 9
+
+const clonedItems = [
+  ...categories.slice(-VISIBLE),
+  ...categories,
+  ...categories.slice(0, VISIBLE),
+];
+const ITEM_COUNT = clonedItems.length; // 15
+
 export default function CategoryShowcase() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = 3;
+  const [pos, setPos] = useState(VISIBLE);
+  const [animate, setAnimate] = useState(true);
+  const timerRef = useRef(null);
+  const trackRef = useRef(null);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => 
-      prev + itemsPerPage >= categories.length ? 0 : prev + itemsPerPage
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => 
-      prev === 0 ? Math.max(categories.length - itemsPerPage, 0) : Math.max(prev - itemsPerPage, 0)
-    );
-  };
-
-  // Auto-play: Move to next slide every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => 
-        prev + itemsPerPage >= categories.length ? 0 : prev + itemsPerPage
-      );
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup on unmount
+  const resetTimer = useCallback(() => {
+    clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setAnimate(true);
+      // user wants left-to-right slide
+      setPos((p) => p - 1);
+    }, 3000);
   }, []);
+
+  useEffect(() => {
+    resetTimer();
+    return () => clearInterval(timerRef.current);
+  }, [resetTimer]);
+
+  const nextSlide = () => { setAnimate(true); setPos((p) => p + 1); resetTimer(); };
+  const prevSlide = () => { setAnimate(true); setPos((p) => p - 1); resetTimer(); };
+  const goToReal = (i) => { setAnimate(true); setPos(VISIBLE + i); resetTimer(); };
+
+  const handleTransitionEnd = (e) => {
+    if (e.target !== trackRef.current) return;
+    if (pos >= VISIBLE + TOTAL) {
+      setAnimate(false);
+      setPos(pos - TOTAL);
+    } else if (pos < VISIBLE) {
+      setAnimate(false);
+      setPos(pos + TOTAL);
+    }
+  };
+
+  useEffect(() => {
+    if (!animate) {
+      const id = requestAnimationFrame(() =>
+        requestAnimationFrame(() => setAnimate(true))
+      );
+      return () => cancelAnimationFrame(id);
+    }
+  }, [animate]);
+
+  const realIndex = ((pos - VISIBLE) % TOTAL + TOTAL) % TOTAL;
+  const translateX = -(pos / ITEM_COUNT) * 100;
 
   return (
     <>
@@ -223,11 +253,11 @@ export default function CategoryShowcase() {
           </div>
 
           {/* Carousel Container */}
-          <div className="relative px-16">
+          <div className="relative w-[130vw] md:w-[110vw] max-w-none left-1/2 -translate-x-1/2">
             {/* Previous Button */}
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-200 text-black p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute left-[8%] md:left-[10%] top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white hover:bg-gray-200 text-black rounded-full shadow-2xl transition-all duration-300 hover:scale-110"
               aria-label="Previous"
             >
               <IconChevronLeft size={24} />
@@ -236,83 +266,93 @@ export default function CategoryShowcase() {
             {/* Next Button */}
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-white hover:bg-gray-200 text-black p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+              className="absolute right-[8%] md:right-[10%] top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white hover:bg-gray-200 text-black rounded-full shadow-2xl transition-all duration-300 hover:scale-110"
               aria-label="Next"
             >
               <IconChevronRight size={24} />
             </button>
 
             {/* Carousel Track */}
-            <div className="overflow-hidden">
+            <div className="overflow-visible px-[10%] md:px-[20%]">
               <div 
-                className="flex gap-8 transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${(currentIndex * (100 / itemsPerPage))}%)` }}
+                ref={trackRef}
+                className="flex"
+                style={{
+                  width: `${(ITEM_COUNT / VISIBLE) * 100}%`,
+                  transform: `translateX(${translateX}%)`,
+                  transition: animate ? 'transform 0.5s ease-in-out' : 'none',
+                }}
+                onTransitionEnd={handleTransitionEnd}
               >
-                {categories.map((category, index) => (
-                  <Link
-                    key={category.id}
-                    href={category.link}
-                    className="group relative bg-[#0f0f0f] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 overflow-hidden border-2 border-[#2a2a2a] hover:border-white hover:-translate-y-3 flex-shrink-0"
-                    style={{ width: `calc((100% - ${(itemsPerPage - 1) * 2}rem) / ${itemsPerPage})` }}
+                {clonedItems.map((category, index) => (
+                  <div
+                    key={index}
+                    style={{ width: `${100 / ITEM_COUNT}%` }}
+                    className="px-4"
                   >
-                    {/* Category Image */}
-                    <div className="h-[410px] overflow-hidden bg-black">
-                      <img
-                        src={category.image}
-                        alt={category.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        loading="lazy"
-                      />
-                    </div>
+                    <Link
+                      href={category.link}
+                      className="group relative bg-[#0f0f0f] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-white/20 transition-all duration-500 overflow-hidden border-2 border-[#2a2a2a] hover:border-white hover:-translate-y-3 block h-full"
+                    >
+                      {/* Category Image */}
+                      <div className="h-[410px] overflow-hidden bg-black">
+                        <img
+                          src={category.image}
+                          alt={category.name}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          loading="lazy"
+                        />
+                      </div>
 
-                    {/* Elegant Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 transition-opacity duration-500"></div>
+                      {/* Elegant Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 transition-opacity duration-500"></div>
 
-                    {/* Content - Always visible */}
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/90 to-transparent backdrop-blur-sm">
-                      {/* Category Name */}
-                      <h3 className="font-serif font-bold text-white text-2xl mb-2 group-hover:text-white transition-colors duration-300">
-                        {category.name}
-                      </h3>
+                      {/* Content - Always visible */}
+                      <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/95 via-black/90 to-transparent backdrop-blur-sm">
+                        {/* Category Name */}
+                        <h3 className="font-serif font-bold text-white text-2xl mb-2 group-hover:text-white transition-colors duration-300">
+                          {category.name}
+                        </h3>
 
-                      {/* Description */}
-                      <p className="text-sm text-gray-400 mb-4 font-light leading-relaxed">
-                        {category.description}
-                      </p>
+                        {/* Description */}
+                        <p className="text-sm text-gray-400 mb-4 font-light leading-relaxed">
+                          {category.description}
+                        </p>
 
-                      {/* Product Count & Arrow */}
-                      <div className="flex items-center justify-between pt-3 border-t border-[#2a2a2a]">
-                        <span className="text-xs font-semibold text-white uppercase tracking-wider">
-                          {category.productCount} Products
-                        </span>
-                        <div className="flex items-center gap-2 text-white font-medium text-sm">
-                          <span>Explore</span>
-                          <IconArrowRight
-                            size={18}
-                            className="transform group-hover:translate-x-2 transition-transform duration-300"
-                          />
+                        {/* Product Count & Arrow */}
+                        <div className="flex items-center justify-between pt-3 border-t border-[#2a2a2a]">
+                          <span className="text-xs font-semibold text-white uppercase tracking-wider">
+                            {category.productCount} Products
+                          </span>
+                          <div className="flex items-center gap-2 text-white font-medium text-sm">
+                            <span>Explore</span>
+                            <IconArrowRight
+                              size={18}
+                              className="transform group-hover:translate-x-2 transition-transform duration-300"
+                            />
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    {/* Decorative corner accent */}
-                    <div className="absolute top-5 right-5 w-12 h-12 border-t-2 border-r-2 border-white/30 group-hover:border-white transition-colors duration-300"></div>
+                      {/* Decorative corner accent */}
+                      <div className="absolute top-5 right-5 w-12 h-12 border-t-2 border-r-2 border-white/30 group-hover:border-white transition-colors duration-300"></div>
 
-                    {/* Bottom decorative line */}
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-3/4 transition-all duration-500"></div>
-                  </Link>
+                      {/* Bottom decorative line */}
+                      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-3/4 transition-all duration-500"></div>
+                    </Link>
+                  </div>
                 ))}
               </div>
             </div>
 
             {/* Dots Indicator */}
             <div className="flex justify-center gap-2 mt-8">
-              {Array.from({ length: Math.ceil(categories.length / itemsPerPage) }).map((_, index) => (
+              {categories.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentIndex(index * itemsPerPage)}
+                  onClick={() => goToReal(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${
-                    Math.floor(currentIndex / itemsPerPage) === index
+                    index === realIndex
                       ? 'w-8 bg-white'
                       : 'w-2 bg-gray-600 hover:bg-gray-500'
                   }`}

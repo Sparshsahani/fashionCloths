@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { IconStarFilled, IconQuote, IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 const testimonials = [
@@ -48,38 +48,80 @@ const testimonials = [
     product: "Men's Slim Fit Shirt",
     image: '/image/blue-cloths.jpg',
   },
+  {
+    id: 5,
+    name: 'Meera Patel',
+    location: 'Surat, India',
+    avatar: 'MP',
+    rating: 5,
+    review:
+      'The ethnic cotton saree is just breathtaking! The colours are rich and the texture is so soft. Perfect for festivals and family functions. Got tonnes of compliments!',
+    product: 'Ethnic Cotton Saree',
+    image: '/image/blue-cloths.jpg',
+  },
 ];
 
-export default function Testimonials() {
-  const VISIBLE = 3;
-  const [current, setCurrent] = useState(0);
-  const [animating, setAnimating] = useState(false);
-  const total = testimonials.length; // 4
-  // Number of valid start positions (wrap-around so all cards show)
-  const steps = total;
+const VISIBLE = 3;
+const TOTAL = testimonials.length; // 5
 
-  const goTo = (index) => {
-    if (animating) return;
-    setAnimating(true);
-    setTimeout(() => {
-      setCurrent((index + steps) % steps);
-      setAnimating(false);
-    }, 300);
+// Infinite loop: clone last VISIBLE items before + first VISIBLE items after
+const clonedItems = [
+  ...testimonials.slice(-VISIBLE),
+  ...testimonials,
+  ...testimonials.slice(0, VISIBLE),
+];
+const ITEM_COUNT = clonedItems.length; // 11
+
+export default function Testimonials() {
+  const [pos, setPos] = useState(VISIBLE); // start at first real item
+  const [animate, setAnimate] = useState(true);
+  const timerRef = useRef(null);
+  const trackRef = useRef(null);
+
+  const resetTimer = useCallback(() => {
+    clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setAnimate(true);
+      setPos((p) => p + 1);
+    }, 5000);
+  }, []);
+
+  useEffect(() => {
+    resetTimer();
+    return () => clearInterval(timerRef.current);
+  }, [resetTimer]);
+
+  const next = () => { setAnimate(true); setPos((p) => p + 1); resetTimer(); };
+  const prev = () => { setAnimate(true); setPos((p) => p - 1); resetTimer(); };
+  const goToReal = (i) => { setAnimate(true); setPos(VISIBLE + i); resetTimer(); };
+
+  // Seamless infinite: after sliding into a clone, jump instantly to the real counterpart
+  const handleTransitionEnd = (e) => {
+    if (e.target !== trackRef.current) return; // ignore bubbled card hover transitions
+    if (pos >= VISIBLE + TOTAL) {
+      setAnimate(false);
+      setPos(pos - TOTAL);
+    } else if (pos < VISIBLE) {
+      setAnimate(false);
+      setPos(pos + TOTAL);
+    }
   };
 
-  const prev = () => goTo(current - 1);
-  const next = () => goTo(current + 1);
-
-  // Auto-play
+  // Re-enable animation after the instant jump (double rAF ensures browser repaints first)
   useEffect(() => {
-    const timer = setInterval(next, 5000);
-    return () => clearInterval(timer);
-  }, [current]);
+    if (!animate) {
+      const id = requestAnimationFrame(() =>
+        requestAnimationFrame(() => setAnimate(true))
+      );
+      return () => cancelAnimationFrame(id);
+    }
+  }, [animate]);
 
-  // Get 3 visible cards with wrap-around
-  const visibleCards = Array.from({ length: VISIBLE }, (_, i) =>
-    testimonials[(current + i) % total]
-  );
+  // Current real index (0–4) for dots & counter
+  const realIndex = ((pos - VISIBLE) % TOTAL + TOTAL) % TOTAL;
+
+  // translateX is % of the track's own width; each card = 1/ITEM_COUNT of track
+  const translateX = -(pos / ITEM_COUNT) * 100;
 
   return (
     <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-b from-[#f5ede0] via-[#f0e6d8] to-[#e8dcc8]">
@@ -108,70 +150,80 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* 3-Card Carousel */}
+        {/* Infinite Slide Carousel */}
         <div className="max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-6 transition-opacity duration-300 ${
-              animating ? 'opacity-0' : 'opacity-100'
-            }`}
-          >
-            {visibleCards.map((t, idx) => (
-              <div
-                key={`${t.id}-${idx}`}
-                className="bg-white rounded-2xl shadow-md border border-[#c19a6b]/25 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-[#c19a6b]/60 transition-all duration-300"
-              >
-                {/* Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={t.image}
-                    alt={t.product}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-[#c19a6b] px-3 py-1 rounded-full">
-                    {t.product}
-                  </span>
-                </div>
-
-                {/* Content */}
-                <div className="flex flex-col gap-4 p-6 flex-1">
-                  {/* Quote + Stars */}
-                  <div className="flex items-center justify-between">
-                    <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#c19a6b]/20 to-[#8b7355]/20 flex items-center justify-center">
-                      <IconQuote size={16} className="text-[#8b7355]" />
+          <div className="overflow-hidden">
+            <div
+              ref={trackRef}
+              className="flex"
+              style={{
+                width: `${(ITEM_COUNT / VISIBLE) * 100}%`,
+                transform: `translateX(${translateX}%)`,
+                transition: animate ? 'transform 0.5s ease-in-out' : 'none',
+              }}
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {clonedItems.map((t, idx) => (
+                <div
+                  key={idx}
+                  style={{ width: `${100 / ITEM_COUNT}%` }}
+                  className="px-3"
+                >
+                  <div className="bg-white rounded-2xl shadow-md border border-[#c19a6b]/25 overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-[#c19a6b]/60 transition-all duration-300 h-full">
+                    {/* Image */}
+                    <div className="relative h-48 overflow-hidden">
+                      <img
+                        src={t.image}
+                        alt={t.product}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                      <span className="absolute bottom-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-[#c19a6b] px-3 py-1 rounded-full">
+                        {t.product}
+                      </span>
                     </div>
-                    <div className="flex gap-0.5">
-                      {[...Array(5)].map((_, i) => (
-                        <IconStarFilled
-                          key={i}
-                          size={13}
-                          className={i < t.rating ? 'text-[#c19a6b]' : 'text-[#e0d0c0]'}
-                        />
-                      ))}
+
+                    {/* Content */}
+                    <div className="flex flex-col gap-4 p-6 flex-1">
+                      {/* Quote + Stars */}
+                      <div className="flex items-center justify-between">
+                        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#c19a6b]/20 to-[#8b7355]/20 flex items-center justify-center">
+                          <IconQuote size={16} className="text-[#8b7355]" />
+                        </div>
+                        <div className="flex gap-0.5">
+                          {[...Array(5)].map((_, i) => (
+                            <IconStarFilled
+                              key={i}
+                              size={13}
+                              className={i < t.rating ? 'text-[#c19a6b]' : 'text-[#e0d0c0]'}
+                            />
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Review */}
+                      <p className="text-[#5a4a3a] text-sm leading-relaxed font-light italic flex-1">
+                        "{t.review}"
+                      </p>
+
+                      {/* Divider */}
+                      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#c19a6b]/30 to-transparent" />
+
+                      {/* Avatar */}
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#c19a6b] to-[#8b7355] flex items-center justify-center flex-shrink-0">
+                          <span className="text-white text-xs font-bold">{t.avatar}</span>
+                        </div>
+                        <div>
+                          <p className="text-[#2c2416] font-semibold text-sm">{t.name}</p>
+                          <p className="text-[#8b7355] text-xs">{t.location}</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Review */}
-                  <p className="text-[#5a4a3a] text-sm leading-relaxed font-light italic flex-1">
-                    "{t.review}"
-                  </p>
-
-                  {/* Divider */}
-                  <div className="h-px w-full bg-gradient-to-r from-transparent via-[#c19a6b]/30 to-transparent" />
-
-                  {/* Avatar */}
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#c19a6b] to-[#8b7355] flex items-center justify-center flex-shrink-0">
-                      <span className="text-white text-xs font-bold">{t.avatar}</span>
-                    </div>
-                    <div>
-                      <p className="text-[#2c2416] font-semibold text-sm">{t.name}</p>
-                      <p className="text-[#8b7355] text-xs">{t.location}</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Controls */}
@@ -197,9 +249,9 @@ export default function Testimonials() {
               {testimonials.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => goTo(i)}
+                  onClick={() => goToReal(i)}
                   className={`rounded-full transition-all duration-300 ${
-                    i === current
+                    i === realIndex
                       ? 'w-8 h-2.5 bg-[#c19a6b]'
                       : 'w-2.5 h-2.5 bg-[#c19a6b]/30 hover:bg-[#c19a6b]/60'
                   }`}
@@ -209,7 +261,7 @@ export default function Testimonials() {
 
             {/* Counter */}
             <p className="text-[#8b7355] text-sm font-semibold">
-              {current + 1} / {total}
+              {realIndex + 1} / {TOTAL}
             </p>
           </div>
         </div>

@@ -278,16 +278,16 @@ export default function ProductDetailPage({ params }) {
                 <div className="flex items-center border  rounded-lg overflow-hidden">
                   <button
                     onClick={decreaseQuantity}
-                    className="px-4 py-3 bg-[#B8A898] border border-[#B8A898] text-black hover:bg-black hover:text-white transition-colors"
+                    className="px-4 py-3 bg-gray-300 border border-gray-300 text-black hover:bg-black hover:text-white transition-colors"
                   >
                     <IconMinus size={18} />
                   </button>
-                  <span className="px-6 py-3 bg-white text-black border rounded font-semibold">
+                  <span className="px-6 py-3 bg-white text-black font-semibold">
                     {quantity}
                   </span>
                   <button
                     onClick={increaseQuantity}
-                    className="px-4 py-3 bg-[#B8A898] border border-[#B8A898] text-black hover:bg-black hover:text-white transition-colors"
+                    className="px-4 py-3 bg-gray-300 border border-gray-300 text-black hover:bg-black hover:text-white transition-colors"
                   >
                     <IconPlus size={18} />
                   </button>
