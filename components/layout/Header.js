@@ -69,7 +69,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 z-50 bg-[#D4C5AF] transform transition-transform duration-300 ${hideOnScroll ? '-translate-y-full' : 'translate-y-0'}`}>
+      <header className={`sticky top-0 z-50 bg-[#D4C5AF] transform transition-transform duration-300 border-b border-gray-200 ${hideOnScroll ? '-translate-y-full' : 'translate-y-0'}`}>
         {/* Top Bar */}
         <div className="bg-[var(--black)] text-white py-4">
           <div className="container flex justify-between items-center text-sm font-semibold px-6">
@@ -217,7 +217,7 @@ export default function Header() {
                 <span className="text-lg font-medium text-white group-hover:text-white">Home</span>
                 <IconArrowRight
                   size={18}
-                  className="text-[var(--primary)] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                  className="text-white opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
                 />
               </Link>
 
@@ -276,7 +276,7 @@ export default function Header() {
                 <span className="text-lg font-medium text-white group-hover:text-white">About Us</span>
                 <IconArrowRight
                   size={18}
-                  className="text-[var(--primary)] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                  className="text-white opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
                 />
               </Link>
 
@@ -288,7 +288,7 @@ export default function Header() {
                 <span className="text-lg font-medium text-white group-hover:text-white">Contact</span>
                 <IconArrowRight
                   size={18}
-                  className="text-[var(--primary)] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                  className="text-white opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
                 />
               </Link>
             </nav>

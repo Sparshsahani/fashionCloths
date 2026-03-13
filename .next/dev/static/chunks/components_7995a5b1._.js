@@ -25,7 +25,7 @@ const slides = [
         subtitle: "Premium Clothing Collection",
         description: "Experience the epitome of style with our handcrafted garments",
         link: "/category/all",
-        image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "New Arrival"
     },
     {
@@ -34,7 +34,7 @@ const slides = [
         subtitle: "Men's Apparel",
         description: "Commanding outfits that define modern masculinity",
         link: "/category/men",
-        image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "Best Seller"
     },
     {
@@ -43,7 +43,7 @@ const slides = [
         subtitle: "Exclusive Combo Sets",
         description: "Curated clothing collections at extraordinary prices - While stocks last",
         link: "/category/combo",
-        image: "https://images.unsplash.com/photo-1495121605193-b116b5b573c8?auto=format&fit=crop&w=1500&q=80",
+        image: "/image/blue-cloths.jpg",
         tag: "Save 40%"
     }
 ];
@@ -210,7 +210,7 @@ function HeroBanner() {
                 children: slides.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>goToSlide(index),
                         "aria-label": `Go to slide ${index + 1}`,
-                        className: "jsx-8d5f1838f4e13750" + " " + `transition-all duration-300 ${index === currentSlide ? "w-12 md:w-16 h-2 bg-[var(--primary)] shadow-lg shadow-[var(--primary)]/50" : "w-2 h-2 bg-white/50 hover:bg-white/80"} rounded-full`
+                        className: "jsx-8d5f1838f4e13750" + " " + `transition-all duration-300 ${index === currentSlide ? "w-12 md:w-16 h-2 bg-white text-black shadow-lg shadow-[var(--primary)]/50" : "w-2 h-2 bg-white/50 hover:bg-white/80"} rounded-full`
                     }, index, false, {
                         fileName: "[project]/components/home/HeroBanner.js",
                         lineNumber: 137,
@@ -288,7 +288,7 @@ const categories = [
     {
         id: 1,
         name: "Men's Clothing",
-        image: 'https://source.unsplash.com/800x800/?fashion,men',
+        image: '/image/blue-cloths.jpg',
         description: 'Stylish apparel for him',
         productCount: 120,
         link: '/product/1'
@@ -296,7 +296,7 @@ const categories = [
     {
         id: 2,
         name: "Women's Clothing",
-        image: 'https://source.unsplash.com/800x800/?fashion,women',
+        image: '/image/blue-cloths.jpg',
         description: 'Elegant outfits for her',
         productCount: 98,
         link: '/product/2'
@@ -304,7 +304,7 @@ const categories = [
     {
         id: 3,
         name: 'Kids Clothing',
-        image: 'https://source.unsplash.com/800x800/?fashion,kids',
+        image: '/image/blue-cloths.jpg',
         description: 'Fun and comfy wear for children',
         productCount: 75,
         link: '/product/3'
@@ -312,7 +312,7 @@ const categories = [
     {
         id: 4,
         name: 'Accessories',
-        image: 'https://source.unsplash.com/800x800/?fashion,accessories',
+        image: '/image/blue-cloths.jpg',
         description: 'Belts, hats, scarves and more',
         productCount: 64,
         link: '/product/4'
@@ -320,7 +320,7 @@ const categories = [
     {
         id: 5,
         name: 'Formal Wear',
-        image: 'https://source.unsplash.com/800x800/?formal,attire',
+        image: '/image/blue-cloths.jpg',
         description: 'Suits and dresses for special occasions',
         productCount: 58,
         link: '/product/5'
@@ -328,7 +328,7 @@ const categories = [
     {
         id: 6,
         name: 'Casual Wear',
-        image: 'https://source.unsplash.com/800x800/?casual,fashion',
+        image: '/image/blue-cloths.jpg',
         description: 'Everyday comfortable outfits',
         productCount: 176,
         link: '/product/6'
@@ -336,7 +336,7 @@ const categories = [
     {
         id: 7,
         name: 'Ethnic Wear',
-        image: 'https://source.unsplash.com/800x800/?ethnic,fashion',
+        image: '/image/blue-cloths.jpg',
         description: 'Traditional and cultural styles',
         productCount: 82,
         link: '/product/7'
@@ -344,7 +344,7 @@ const categories = [
     {
         id: 8,
         name: 'Outerwear',
-        image: 'https://source.unsplash.com/800x800/?outerwear,fashion',
+        image: '/image/blue-cloths.jpg',
         description: 'Jackets, coats and warm layers',
         productCount: 47,
         link: '/product/8'
@@ -352,7 +352,7 @@ const categories = [
     {
         id: 9,
         name: 'Loungewear',
-        image: 'https://source.unsplash.com/800x800/?loungewear,fashion',
+        image: '/image/blue-cloths.jpg',
         description: 'Relaxed clothing for home',
         productCount: 53,
         link: '/product/9'
@@ -935,13 +935,13 @@ function ProductCard({ product }) {
     const { id, name, price, originalPrice, rating = 4.5, reviews = 0, image, badge, category } = product;
     const discount = originalPrice ? Math.round((originalPrice - price) / originalPrice * 100) : 0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "group relative bg-[#1a1a1a] rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(193,154,107,0.2)]",
+        className: "group relative bg-zinc-900 border border-zinc-800 rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 left-0 w-full p-2 md:p-3 flex justify-between items-start z-20 pointer-events-none",
                 children: [
                     badge ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-[#D4C5AF] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
+                        className: "bg-white text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
                         children: badge
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -969,7 +969,7 @@ function ProductCard({ product }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setIsWishlisted(!isWishlisted),
-                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-[var(--primary)] backdrop-blur-sm transition-colors text-white hover:text-black",
+                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-white text-black backdrop-blur-sm transition-colors text-white hover:text-black",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHeart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHeart$3e$__["IconHeart"], {
                                     size: 14,
                                     className: `md:w-[16px] md:h-[16px] ${isWishlisted ? 'fill-black' : ''}`
@@ -1002,7 +1002,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-center bg-cover transition-transform duration-700 ease-out group-hover:scale-105",
                         style: {
-                            backgroundImage: `url(${image || 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800'})`
+                            backgroundImage: `url(${image || '/image/blue-cloths.jpg'})`
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -1019,7 +1019,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 hidden md:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[#D4C5AF] transition-colors",
+                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors",
                             children: "Quick View"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductCard.js",
@@ -1038,12 +1038,12 @@ function ProductCard({ product }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-[#1a1a1a]",
+                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-zinc-900 border border-zinc-800",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[9px] md:text-[10px] text-[#D4C5AF] font-bold uppercase tracking-widest mb-1",
+                                className: "text-[9px] md:text-[10px] text-white font-bold uppercase tracking-widest mb-1",
                                 children: category
                             }, void 0, false, {
                                 fileName: "[project]/components/common/ProductCard.js",
@@ -1053,7 +1053,7 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: `/product/${id}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-[var(--primary)] transition-colors line-clamp-1",
+                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-white transition-colors line-clamp-1",
                                     children: name
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductCard.js",
@@ -1110,7 +1110,7 @@ function ProductCard({ product }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                         size: 14,
-                                        className: "fill-[var(--primary)] text-[var(--primary)]"
+                                        className: "fill-[var(--primary)] text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/ProductCard.js",
                                         lineNumber: 104,
@@ -1137,7 +1137,7 @@ function ProductCard({ product }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--white)] hover:text-black transition-all",
+                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-white hover:bg-[var(--white)] hover:text-black transition-all",
                         children: "Add to Cart"
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -1190,7 +1190,7 @@ const sampleProducts = [
         originalPrice: 3999,
         rating: 4.8,
         reviews: 212,
-        image: "https://source.unsplash.com/800x800/?denim,jacket",
+        image: '/image/blue-cloths.jpg',
         badge: "Best Seller",
         category: "Outerwear"
     },
@@ -1201,7 +1201,7 @@ const sampleProducts = [
         originalPrice: 3499,
         rating: 4.6,
         reviews: 158,
-        image: "https://source.unsplash.com/800x800/?summer-dress,floral",
+        image: '/image/blue-cloths.jpg',
         badge: "New",
         category: "Women’s Clothing"
     },
@@ -1212,7 +1212,7 @@ const sampleProducts = [
         originalPrice: 1199,
         rating: 4.7,
         reviews: 301,
-        image: "https://source.unsplash.com/800x800/?kids,tshirt",
+        image: '/image/blue-cloths.jpg',
         category: "Kids Clothing"
     },
     {
@@ -1222,7 +1222,7 @@ const sampleProducts = [
         originalPrice: 2799,
         rating: 4.5,
         reviews: 421,
-        image: "https://source.unsplash.com/800x800/?shirt,office",
+        image: '/image/blue-cloths.jpg',
         badge: "Hot Deal",
         category: "Formal Wear"
     },
@@ -1233,7 +1233,7 @@ const sampleProducts = [
         originalPrice: 2199,
         rating: 4.4,
         reviews: 167,
-        image: "https://source.unsplash.com/800x800/?loungewear,cozy",
+        image: '/image/blue-cloths.jpg',
         category: "Loungewear"
     },
     {
@@ -1243,7 +1243,7 @@ const sampleProducts = [
         originalPrice: 4999,
         rating: 4.9,
         reviews: 98,
-        image: "https://source.unsplash.com/800x800/?ethnic,kurta",
+        image: '/image/blue-cloths.jpg',
         badge: "Combo",
         category: "Ethnic Wear"
     },
@@ -1254,7 +1254,7 @@ const sampleProducts = [
         originalPrice: 2999,
         rating: 4.7,
         reviews: 145,
-        image: "https://source.unsplash.com/800x800/?hoodie,casual",
+        image: '/image/blue-cloths.jpg',
         category: "Casual Wear"
     },
     {
@@ -1264,7 +1264,7 @@ const sampleProducts = [
         originalPrice: 799,
         rating: 4.6,
         reviews: 203,
-        image: "https://source.unsplash.com/800x800/?silk,tie",
+        image: '/image/blue-cloths.jpg',
         badge: "Trending",
         category: "Accessories"
     }
@@ -1736,7 +1736,7 @@ var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
-function CenterBanner({ title = "Step Into Style", subtitle = "New Fashion Drops", description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.", ctaText = "Shop Now", ctaLink = "/products", image = "https://source.unsplash.com/1600x900/?fashion,model", align = "right" }) {
+function CenterBanner({ title = "Step Into Style", subtitle = "New Fashion Drops", description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.", ctaText = "Shop Now", ctaLink = "/products", image = '/image/blue-cloths.jpg', align = "right" }) {
     _s();
     const ref = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [inView, setInView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -1786,7 +1786,7 @@ function CenterBanner({ title = "Step Into Style", subtitle = "New Fashion Drops
                                 className: "flex items-center gap-3 mb-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "h-[1px] w-8 bg-[var(--primary)]"
+                                        className: "h-[1px] w-8 bg-white text-black"
                                     }, void 0, false, {
                                         fileName: "[project]/components/home/CenterBanner.js",
                                         lineNumber: 56,

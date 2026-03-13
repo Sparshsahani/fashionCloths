@@ -189,7 +189,7 @@ export default function Footer() {
       </footer>
 
       {/* Bottom Bar with Gold Background - Full Width */}
-      <div className="py-2 w-full bg-white border-t-2 border-black">
+      <div className="py-2 w-full bg-[#D4C5AF] border-t-2 border-black">
         <div className="container py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-black text-sm text-center md:text-left font-medium">

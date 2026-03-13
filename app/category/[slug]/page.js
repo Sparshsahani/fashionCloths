@@ -11,37 +11,37 @@ const categoryData = {
   men: {
     name: 'Men Clothing',
     description: 'Stylish and contemporary apparel for men',
-    image: 'https://source.unsplash.com/1200x400/?mens-clothing,fashion',
+    image: '/image/blue-cloths.jpg',
   },
   women: {
     name: 'Women Clothing',
     description: 'Elegant dresses, tops and more for women',
-    image: 'https://source.unsplash.com/1200x400/?womens-clothing,fashion',
+    image: '/image/blue-cloths.jpg',
   },
   kids: {
     name: 'Kids Clothing',
     description: 'Fun, comfortable outfits for children',
-    image: 'https://source.unsplash.com/1200x400/?kids-clothing,fashion',
+    image: '/image/blue-cloths.jpg',
   },
   accessories: {
     name: 'Accessories',
     description: 'Belts, hats, scarves and other style accents',
-    image: 'https://source.unsplash.com/1200x400/?fashion-accessories,style',
+    image: '/image/blue-cloths.jpg',
   },
   formal: {
     name: 'Formal Wear',
     description: 'Sharp suits and formal attire for special occasions',
-    image: 'https://source.unsplash.com/1200x400/?formal-wear,clothes',
+    image: '/image/blue-cloths.jpg',
   },
   casual: {
     name: 'Casual Wear',
     description: 'Relaxed and comfortable everyday clothing',
-    image: 'https://source.unsplash.com/1200x400/?casual-wear,clothes',
+    image: '/image/blue-cloths.jpg',
   },
   ethnic: {
     name: 'Ethnic Wear',
     description: 'Traditional and cultural garments with flair',
-    image: 'https://source.unsplash.com/1200x400/?ethnic-wear,clothes',
+    image: '/image/blue-cloths.jpg',
   },
 };
 
@@ -56,7 +56,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 3999,
         rating: 4.8,
         reviews: 156,
-        image: 'https://source.unsplash.com/800x800/?denim,jacket',
+        image: '/image/blue-cloths.jpg',
         badge: 'Best Seller',
         category: 'Men Clothing',
       },
@@ -67,7 +67,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 2499,
         rating: 4.6,
         reviews: 203,
-        image: 'https://source.unsplash.com/800x800/?chinos,pants',
+        image: '/image/blue-cloths.jpg',
         badge: 'Trending',
         category: 'Men Clothing',
       },
@@ -78,7 +78,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1299,
         rating: 4.7,
         reviews: 189,
-        image: 'https://source.unsplash.com/800x800/?polo,shirt',
+        image: '/image/blue-cloths.jpg',
         badge: 'Premium',
         category: 'Men Clothing',
       },
@@ -89,7 +89,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 699,
         rating: 4.9,
         reviews: 221,
-        image: 'https://source.unsplash.com/800x800/?leather,belt',
+        image: '/image/blue-cloths.jpg',
         badge: 'Limited',
         category: 'Accessories',
       },
@@ -102,7 +102,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 3499,
         rating: 4.6,
         reviews: 89,
-        image: 'https://source.unsplash.com/800x800/?floral,dress',
+        image: '/image/blue-cloths.jpg',
         badge: 'New',
         category: 'Women Clothing',
       },
@@ -113,7 +113,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 4999,
         rating: 4.9,
         reviews: 312,
-        image: 'https://source.unsplash.com/800x800/?silk,gown',
+        image: '/image/blue-cloths.jpg',
         badge: 'Premium',
         category: 'Women Clothing',
       },
@@ -124,7 +124,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 2499,
         rating: 4.6,
         reviews: 167,
-        image: 'https://source.unsplash.com/800x800/?denim,jacket',
+        image: '/image/blue-cloths.jpg',
         badge: 'Bestseller',
         category: 'Women Clothing',
       },
@@ -135,7 +135,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 999,
         rating: 4.8,
         reviews: 234,
-        image: 'https://source.unsplash.com/800x800/?necklace,jewelry',
+        image: '/image/blue-cloths.jpg',
         badge: 'Hot',
         category: 'Accessories',
       },
@@ -148,7 +148,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 699,
         rating: 4.7,
         reviews: 234,
-        image: 'https://source.unsplash.com/800x800/?kids,tshirt',
+        image: '/image/blue-cloths.jpg',
         badge: 'Bestseller',
         category: 'Kids Clothing',
       },
@@ -159,7 +159,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 499,
         rating: 4.8,
         reviews: 198,
-        image: 'https://source.unsplash.com/800x800/?shorts,kids',
+        image: '/image/blue-cloths.jpg',
         badge: 'Premium',
         category: 'Kids Clothing',
       },
@@ -170,7 +170,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 999,
         rating: 4.5,
         reviews: 156,
-        image: 'https://source.unsplash.com/800x800/?kids,hoodie',
+        image: '/image/blue-cloths.jpg',
         badge: null,
         category: 'Kids Clothing',
       },
@@ -183,7 +183,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1199,
         rating: 4.7,
         reviews: 145,
-        image: 'https://source.unsplash.com/800x800/?wool,scarf',
+        image: '/image/blue-cloths.jpg',
         badge: 'Popular',
         category: 'Accessories',
       },
@@ -194,7 +194,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 799,
         rating: 4.6,
         reviews: 178,
-        image: 'https://source.unsplash.com/800x800/?sun,hat',
+        image: '/image/blue-cloths.jpg',
         badge: 'New',
         category: 'Accessories',
       },
@@ -205,7 +205,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1799,
         rating: 4.5,
         reviews: 134,
-        image: 'https://source.unsplash.com/800x800/?leather,wallet',
+        image: '/image/blue-cloths.jpg',
         badge: null,
         category: 'Accessories',
       },
@@ -218,7 +218,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 6999,
         rating: 4.4,
         reviews: 167,
-        image: 'https://source.unsplash.com/800x800/?suit,formal',
+        image: '/image/blue-cloths.jpg',
         badge: 'Hot Deal',
         category: 'Formal Wear',
       },
@@ -229,7 +229,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1699,
         rating: 4.3,
         reviews: 143,
-        image: 'https://source.unsplash.com/800x800/?dress,shirt',
+        image: '/image/blue-cloths.jpg',
         badge: 'Bestseller',
         category: 'Formal Wear',
       },
@@ -240,7 +240,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1299,
         rating: 4.5,
         reviews: 189,
-        image: 'https://source.unsplash.com/800x800/?tie,cufflinks',
+        image: '/image/blue-cloths.jpg',
         badge: 'New',
         category: 'Accessories',
       },
@@ -253,7 +253,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 2999,
         rating: 4.9,
         reviews: 98,
-        image: 'https://source.unsplash.com/800x800/?hoodie,casual',
+        image: '/image/blue-cloths.jpg',
         badge: 'Combo',
         category: 'Casual Wear',
       },
@@ -264,7 +264,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1499,
         rating: 4.8,
         reviews: 67,
-        image: 'https://source.unsplash.com/800x800/?denim,shorts',
+        image: '/image/blue-cloths.jpg',
         badge: 'Gift',
         category: 'Casual Wear',
       },
@@ -275,7 +275,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 1799,
         rating: 4.7,
         reviews: 123,
-        image: 'https://source.unsplash.com/800x800/?graphic,tee',
+        image: '/image/blue-cloths.jpg',
         badge: 'Value',
         category: 'Casual Wear',
       },
@@ -288,7 +288,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 4999,
         rating: 4.7,
         reviews: 234,
-        image: 'https://source.unsplash.com/800x800/?kurta,ethnic',
+        image: '/image/blue-cloths.jpg',
         badge: 'Bestseller',
         category: 'Ethnic Wear',
       },
@@ -299,7 +299,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 5999,
         rating: 4.8,
         reviews: 198,
-        image: 'https://source.unsplash.com/800x800/?saree,ethnic',
+        image: '/image/blue-cloths.jpg',
         badge: 'Premium',
         category: 'Ethnic Wear',
       },
@@ -310,7 +310,7 @@ const getProductsByCategory = (categorySlug) => {
         originalPrice: 7999,
         rating: 4.5,
         reviews: 156,
-        image: 'https://source.unsplash.com/800x800/?sherwani,ethnic',
+        image: '/image/blue-cloths.jpg',
         badge: null,
         category: 'Ethnic Wear',
       },
@@ -379,7 +379,7 @@ export default function CategoryPage({ params }) {
       <main className="bg-black min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Category Not Found</h1>
-          <Link href="/products" className="text-[var(--primary)] hover:underline">
+          <Link href="/products" className="text-white hover:underline">
             View All Products
           </Link>
         </div>
@@ -390,14 +390,14 @@ export default function CategoryPage({ params }) {
   return (
     <main className="bg-black min-h-screen">
       {/* Breadcrumb */}
-      <div className="bg-[#1a1a1a] border-b border-white/10">
+      <div className="bg-zinc-900 border border-zinc-800 border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center gap-2 text-sm">
-            <Link href="/" className="text-gray-400 hover:text-[var(--primary)] transition-colors">
+            <Link href="/" className="text-gray-400 hover:text-white transition-colors">
               Home
             </Link>
             <IconChevronRight size={16} className="text-gray-600" />
-            <Link href="/products" className="text-gray-400 hover:text-[var(--primary)] transition-colors">
+            <Link href="/products" className="text-gray-400 hover:text-white transition-colors">
               Products
             </Link>
             <IconChevronRight size={16} className="text-gray-600" />
@@ -415,7 +415,7 @@ export default function CategoryPage({ params }) {
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-20 text-center">
-          <p className="text-[var(--primary)] text-sm font-bold uppercase tracking-wider mb-3">
+          <p className="text-white text-sm font-bold uppercase tracking-wider mb-3">
             Category
           </p>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
@@ -426,12 +426,12 @@ export default function CategoryPage({ params }) {
           </p>
           <div className="flex items-center justify-center gap-6 mt-6">
             <div className="text-center">
-              <p className="text-3xl font-bold text-[var(--primary)]">{products.length}</p>
+              <p className="text-3xl font-bold text-white">{products.length}</p>
               <p className="text-gray-400 text-sm">Products</p>
             </div>
             <div className="w-px h-12 bg-white/10"></div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-[var(--primary)]">
+              <p className="text-3xl font-bold text-white">
                 {products.reduce((sum, p) => sum + p.reviews, 0)}
               </p>
               <p className="text-gray-400 text-sm">Reviews</p>
@@ -472,7 +472,7 @@ export default function CategoryPage({ params }) {
                   sortBy: 'popular',
                 })
               }
-              className="px-6 py-3 bg-[var(--primary)] text-black font-semibold rounded-lg hover:bg-[var(--primary)]/90 transition-colors"
+              className="px-6 py-3 bg-white text-black text-black font-semibold rounded-lg hover:bg-white text-black/90 transition-colors"
             >
               Clear All Filters
             </button>

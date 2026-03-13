@@ -523,13 +523,13 @@ function ProductCard({ product }) {
     const { id, name, price, originalPrice, rating = 4.5, reviews = 0, image, badge, category } = product;
     const discount = originalPrice ? Math.round((originalPrice - price) / originalPrice * 100) : 0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "group relative bg-[#1a1a1a] rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(193,154,107,0.2)]",
+        className: "group relative bg-zinc-900 border border-zinc-800 rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 left-0 w-full p-2 md:p-3 flex justify-between items-start z-20 pointer-events-none",
                 children: [
                     badge ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-[#D4C5AF] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
+                        className: "bg-white text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
                         children: badge
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -557,7 +557,7 @@ function ProductCard({ product }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setIsWishlisted(!isWishlisted),
-                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-[var(--primary)] backdrop-blur-sm transition-colors text-white hover:text-black",
+                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-white text-black backdrop-blur-sm transition-colors text-white hover:text-black",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHeart$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHeart$3e$__["IconHeart"], {
                                     size: 14,
                                     className: `md:w-[16px] md:h-[16px] ${isWishlisted ? 'fill-black' : ''}`
@@ -607,7 +607,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 hidden md:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[#D4C5AF] transition-colors",
+                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors",
                             children: "Quick View"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductCard.js",
@@ -626,12 +626,12 @@ function ProductCard({ product }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-[#1a1a1a]",
+                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-zinc-900 border border-zinc-800",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[9px] md:text-[10px] text-[#D4C5AF] font-bold uppercase tracking-widest mb-1",
+                                className: "text-[9px] md:text-[10px] text-white font-bold uppercase tracking-widest mb-1",
                                 children: category
                             }, void 0, false, {
                                 fileName: "[project]/components/common/ProductCard.js",
@@ -641,7 +641,7 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: `/product/${id}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-[var(--primary)] transition-colors line-clamp-1",
+                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-white transition-colors line-clamp-1",
                                     children: name
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductCard.js",
@@ -698,7 +698,7 @@ function ProductCard({ product }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                         size: 14,
-                                        className: "fill-[var(--primary)] text-[var(--primary)]"
+                                        className: "fill-[var(--primary)] text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/ProductCard.js",
                                         lineNumber: 104,
@@ -725,7 +725,7 @@ function ProductCard({ product }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--white)] hover:text-black transition-all",
+                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-white hover:bg-[var(--white)] hover:text-black transition-all",
                         children: "Add to Cart"
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -757,7 +757,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.1.6_@babel+core@7.2_de68e8e93aa421514965ddcf009bccaf/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$ProductFilter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/common/ProductFilter.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$ProductCard$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/common/ProductCard.js [app-ssr] (ecmascript)");
-'use client';
+"use client";
 ;
 ;
 ;
@@ -766,46 +766,46 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$Prod
 const allProducts = [
     {
         id: 1,
-        name: 'Classic Denim Jacket',
+        name: "Classic Denim Jacket",
         price: 2999,
         originalPrice: 3999,
         rating: 4.8,
         reviews: 234,
-        image: 'https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=800&h=800&fit=crop',
-        badge: 'New',
-        category: 'Outerwear'
+        image: "/image/blue-cloths.jpg",
+        badge: "New",
+        category: "Outerwear"
     },
     {
         id: 2,
-        name: 'Floral Wrap Maxi Dress',
+        name: "Floral Wrap Maxi Dress",
         price: 2499,
         originalPrice: 3499,
         rating: 4.6,
         reviews: 189,
-        image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&h=800&fit=crop',
-        badge: 'Bestseller',
+        image: "/image/blue-cloths.jpg",
+        badge: "Bestseller",
         category: "Women's Clothing"
     },
     {
         id: 3,
-        name: 'Kids Printed Graphic Tee',
+        name: "Kids Printed Graphic Tee",
         price: 799,
         originalPrice: 1199,
         rating: 4.4,
         reviews: 156,
-        image: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=800&h=800&fit=crop',
-        badge: 'Sale',
-        category: 'Kids Clothing'
+        image: "/image/blue-cloths.jpg",
+        badge: "Sale",
+        category: "Kids Clothing"
     },
     {
         id: 4,
-        name: 'Silk Evening Gown',
+        name: "Silk Evening Gown",
         price: 3299,
         originalPrice: 4999,
         rating: 4.9,
         reviews: 312,
-        image: 'https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=800&h=800&fit=crop',
-        badge: 'Premium',
+        image: "/image/blue-cloths.jpg",
+        badge: "Premium",
         category: "Women's Clothing"
     },
     {
@@ -815,42 +815,42 @@ const allProducts = [
         originalPrice: 2799,
         rating: 4.5,
         reviews: 98,
-        image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&h=800&fit=crop',
+        image: "/image/blue-cloths.jpg",
         badge: null,
         category: "Men's Clothing"
     },
     {
         id: 6,
-        name: 'Cozy Fleece Loungewear Set',
+        name: "Cozy Fleece Loungewear Set",
         price: 1599,
         originalPrice: 2199,
         rating: 4.3,
         reviews: 145,
-        image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop',
+        image: "/image/blue-cloths.jpg",
         badge: null,
-        category: 'Loungewear'
+        category: "Loungewear"
     },
     {
         id: 7,
-        name: 'Embroidered Kurta Set',
+        name: "Embroidered Kurta Set",
         price: 3499,
         originalPrice: 4999,
         rating: 4.9,
         reviews: 87,
-        image: 'https://images.unsplash.com/photo-1583391733956-6c78276477e3?w=800&h=800&fit=crop',
-        badge: 'Limited',
-        category: 'Ethnic Wear'
+        image: "/image/blue-cloths.jpg",
+        badge: "Limited",
+        category: "Ethnic Wear"
     },
     {
         id: 8,
-        name: 'Oversized Streetwear Hoodie',
+        name: "Oversized Streetwear Hoodie",
         price: 2299,
         originalPrice: 2999,
         rating: 4.7,
         reviews: 203,
-        image: 'https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&h=800&fit=crop',
+        image: "/image/blue-cloths.jpg",
         badge: null,
-        category: 'Casual Wear'
+        category: "Casual Wear"
     },
     {
         id: 9,
@@ -859,20 +859,20 @@ const allProducts = [
         originalPrice: 2499,
         rating: 4.6,
         reviews: 167,
-        image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop',
-        badge: 'New',
+        image: "/image/blue-cloths.jpg",
+        badge: "New",
         category: "Men's Clothing"
     },
     {
         id: 10,
-        name: 'Distressed Denim Shorts',
+        name: "Distressed Denim Shorts",
         price: 999,
         originalPrice: 1499,
         rating: 4.8,
         reviews: 221,
-        image: 'https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=800&h=800&fit=crop',
-        badge: 'Bestseller',
-        category: 'Casual Wear'
+        image: '/image/blue-cloths.jpg',
+        badge: "Bestseller",
+        category: "Casual Wear"
     },
     {
         id: 11,
@@ -881,28 +881,28 @@ const allProducts = [
         originalPrice: 999,
         rating: 4.2,
         reviews: 134,
-        image: 'https://images.unsplash.com/photo-1485462537746-965f33f49f93?w=800&h=800&fit=crop',
-        badge: 'Sale',
+        image: '/image/blue-cloths.jpg',
+        badge: "Sale",
         category: "Women's Clothing"
     },
     {
         id: 12,
-        name: 'Tailored Two-Piece Blazer Set',
+        name: "Tailored Two-Piece Blazer Set",
         price: 5999,
         originalPrice: 7999,
         rating: 4.7,
         reviews: 189,
-        image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop',
+        image: '/image/blue-cloths.jpg',
         badge: null,
-        category: 'Formal Wear'
+        category: "Formal Wear"
     }
 ];
 function ProductsPage() {
     const [filters, setFilters] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        category: 'all',
-        priceRange: 'all',
-        rating: 'all',
-        sortBy: 'popular'
+        category: "all",
+        priceRange: "all",
+        rating: "all",
+        sortBy: "popular"
     });
     // Filter and sort products
     const filteredProducts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
@@ -910,38 +910,38 @@ function ProductsPage() {
             ...allProducts
         ];
         // Category Filter
-        if (filters.category !== 'all') {
-            products = products.filter((p)=>p.category.toLowerCase().replace(/\s+/g, '-') === filters.category);
+        if (filters.category !== "all") {
+            products = products.filter((p)=>p.category.toLowerCase().replace(/\s+/g, "-") === filters.category);
         }
         // Price Range Filter
-        if (filters.priceRange !== 'all') {
-            const [min, max] = filters.priceRange.split('-').map((v)=>v === '' ? Infinity : parseInt(v.replace('+', '')));
+        if (filters.priceRange !== "all") {
+            const [min, max] = filters.priceRange.split("-").map((v)=>v === "" ? Infinity : parseInt(v.replace("+", "")));
             products = products.filter((p)=>{
                 if (max === undefined) return p.price >= min;
                 return p.price >= min && p.price <= max;
             });
         }
         // Rating Filter
-        if (filters.rating !== 'all') {
+        if (filters.rating !== "all") {
             const minRating = parseFloat(filters.rating);
             products = products.filter((p)=>p.rating >= minRating);
         }
         // Sort
         switch(filters.sortBy){
-            case 'price-low':
+            case "price-low":
                 products.sort((a, b)=>a.price - b.price);
                 break;
-            case 'price-high':
+            case "price-high":
                 products.sort((a, b)=>b.price - a.price);
                 break;
-            case 'rating':
+            case "rating":
                 products.sort((a, b)=>b.rating - a.rating);
                 break;
-            case 'newest':
+            case "newest":
                 // Assuming newer products have higher IDs
                 products.sort((a, b)=>b.id - a.id);
                 break;
-            case 'popular':
+            case "popular":
             default:
                 products.sort((a, b)=>b.reviews - a.reviews);
                 break;
@@ -951,7 +951,7 @@ function ProductsPage() {
         filters
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-        className: "bg-[#D4C5AF]/80 min-h-screen",
+        className: "bg-white/80 min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "relative py-20 md:py-28 overflow-hidden min-h-[220px] md:min-h-[320px]",
@@ -965,58 +965,58 @@ function ProductsPage() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/app/products/page.js",
-                            lineNumber: 207,
-                            columnNumber: 21
+                            lineNumber: 210,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 206,
-                        columnNumber: 17
+                        lineNumber: 209,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-[#c19a6b] opacity-20"
                     }, void 0, false, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 213,
-                        columnNumber: 17
+                        lineNumber: 216,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "relative max-w-7xl mx-auto px-4",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl md:text-5xl font-bold text-[#D4C5AF] mb-4",
+                                className: "text-3xl md:text-5xl font-bold text-white mb-4",
                                 children: "All Products"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
-                                lineNumber: 216,
-                                columnNumber: 21
+                                lineNumber: 219,
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-gray-400 text-sm md:text-base",
                                 children: "Elevate your everyday style with our exclusively curated clothing collection"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
-                                lineNumber: 219,
-                                columnNumber: 21
+                                lineNumber: 222,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 215,
-                        columnNumber: 17
+                        lineNumber: 218,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/products/page.js",
-                lineNumber: 204,
-                columnNumber: 13
+                lineNumber: 207,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$common$2f$ProductFilter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                 onFilterChange: setFilters
             }, void 0, false, {
                 fileName: "[project]/app/products/page.js",
-                lineNumber: 226,
-                columnNumber: 13
+                lineNumber: 230,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 py-8 md:py-12",
@@ -1026,26 +1026,28 @@ function ProductsPage() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-black text-sm",
                             children: [
-                                "Showing ",
+                                "Showing",
+                                " ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-white font-semibold",
                                     children: filteredProducts.length
                                 }, void 0, false, {
                                     fileName: "[project]/app/products/page.js",
-                                    lineNumber: 233,
-                                    columnNumber: 33
+                                    lineNumber: 238,
+                                    columnNumber: 13
                                 }, this),
-                                " products"
+                                " ",
+                                "products"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/products/page.js",
-                            lineNumber: 232,
-                            columnNumber: 21
+                            lineNumber: 236,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 231,
-                        columnNumber: 17
+                        lineNumber: 235,
+                        columnNumber: 9
                     }, this),
                     filteredProducts.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
@@ -1053,13 +1055,13 @@ function ProductsPage() {
                                 product: product
                             }, product.id, false, {
                                 fileName: "[project]/app/products/page.js",
-                                lineNumber: 241,
-                                columnNumber: 29
+                                lineNumber: 249,
+                                columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 239,
-                        columnNumber: 21
+                        lineNumber: 247,
+                        columnNumber: 11
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "text-center py-16",
                         children: [
@@ -1068,55 +1070,55 @@ function ProductsPage() {
                                 children: "No products found matching your filters"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
-                                lineNumber: 246,
-                                columnNumber: 25
+                                lineNumber: 254,
+                                columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setFilters({
-                                        category: 'all',
-                                        priceRange: 'all',
-                                        rating: 'all',
-                                        sortBy: 'popular'
+                                        category: "all",
+                                        priceRange: "all",
+                                        rating: "all",
+                                        sortBy: "popular"
                                     }),
-                                className: "px-6 py-3 bg-[var(--primary)] text-black font-semibold rounded-lg hover:bg-[var(--primary)]/90 transition-colors",
+                                className: "px-6 py-3 bg-white text-black text-black font-semibold rounded-lg hover:bg-white text-black/90 transition-colors",
                                 children: "Clear All Filters"
                             }, void 0, false, {
                                 fileName: "[project]/app/products/page.js",
-                                lineNumber: 247,
-                                columnNumber: 25
+                                lineNumber: 257,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/products/page.js",
-                        lineNumber: 245,
-                        columnNumber: 21
+                        lineNumber: 253,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/products/page.js",
-                lineNumber: 229,
-                columnNumber: 13
+                lineNumber: 233,
+                columnNumber: 7
             }, this),
             filteredProducts.length > 0 && filteredProducts.length >= 12 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "max-w-7xl mx-auto px-4 pb-12 text-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "px-8 py-3 border border-white/20 text-white font-semibold rounded-lg hover:border-[var(--primary)] hover:bg-[var(--primary)] hover:text-black transition-all",
+                    className: "px-8 py-3 border border-white/20 text-white font-semibold rounded-lg hover:border-white hover:bg-white text-black hover:text-black transition-all",
                     children: "Load More Products"
                 }, void 0, false, {
                     fileName: "[project]/app/products/page.js",
-                    lineNumber: 267,
-                    columnNumber: 21
+                    lineNumber: 277,
+                    columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/products/page.js",
-                lineNumber: 266,
-                columnNumber: 17
+                lineNumber: 276,
+                columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/products/page.js",
-        lineNumber: 202,
-        columnNumber: 9
+        lineNumber: 205,
+        columnNumber: 5
     }, this);
 }
 }),

@@ -9,7 +9,7 @@ export default function CenterBanner({
   description = "Discover our newest garments – carefully crafted pieces that elevate your wardrobe.",
   ctaText = "Shop Now",
   ctaLink = "/products",
-  image = "https://source.unsplash.com/1600x900/?fashion,model",
+  image = '/image/blue-cloths.jpg',
   align = "right",
 }) {
   const ref = useRef(null);
@@ -53,7 +53,7 @@ export default function CenterBanner({
           className={`max-w-3xl ${align === "left" ? "ml-8 md:ml-16 lg:ml-24" : "mr-8 md:mr-16 lg:mr-24"} p-8 md:p-12`}
         >
           <div className="flex items-center gap-3 mb-4">
-            <span className="h-[1px] w-8 bg-[var(--primary)]"></span>
+            <span className="h-[1px] w-8 bg-white text-black"></span>
             <p className="text-xs md:text-sm uppercase tracking-[0.2em] text-[var(--white)] font-bold">
               {subtitle}
             </p>

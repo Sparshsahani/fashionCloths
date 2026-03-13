@@ -13,7 +13,7 @@ const slides = [
       "Experience the epitome of style with our handcrafted garments",
 
     link: "/category/all",
-    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1500&q=80",
+    image: "/image/blue-cloths.jpg",
     tag: "New Arrival",
   },
   {
@@ -22,7 +22,7 @@ const slides = [
     subtitle: "Men's Apparel",
     description: "Commanding outfits that define modern masculinity",
     link: "/category/men",
-    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1500&q=80",
+    image: "/image/blue-cloths.jpg",
     tag: "Best Seller",
   },
   {
@@ -32,7 +32,7 @@ const slides = [
     description:
       "Curated clothing collections at extraordinary prices - While stocks last",
     link: "/category/combo",
-    image: "https://images.unsplash.com/photo-1495121605193-b116b5b573c8?auto=format&fit=crop&w=1500&q=80",
+    image: "/image/blue-cloths.jpg",
     tag: "Save 40%",
   },
 ];
@@ -139,7 +139,7 @@ export default function HeroBanner() {
             onClick={() => goToSlide(index)}
             className={`transition-all duration-300 ${
               index === currentSlide
-                ? "w-12 md:w-16 h-2 bg-[var(--primary)] shadow-lg shadow-[var(--primary)]/50"
+                ? "w-12 md:w-16 h-2 bg-white text-black shadow-lg shadow-[var(--primary)]/50"
                 : "w-2 h-2 bg-white/50 hover:bg-white/80"
             } rounded-full`}
             aria-label={`Go to slide ${index + 1}`}

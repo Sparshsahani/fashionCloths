@@ -28,7 +28,7 @@ export default function Home() {
         description="Check out the latest cloths dropped this season — styles that speak for you."
         ctaText="Shop New Arrivals"
         ctaLink="/products/new"
-        image="https://source.unsplash.com/1600x900/?new,clothes"
+        image= '/image/blue-cloths.jpg'
         align="left"
       />
 

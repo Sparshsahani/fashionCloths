@@ -12,7 +12,7 @@ const slides = [
     description: 'Discover our premium collection of perfumes crafted for the discerning individual',
     cta: 'Shop Now',
     link: '/category/all',
-    image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=600&fit=crop',
+    image: '/image/blue-cloths.jpg',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const slides = [
     description: 'Powerful fragrances that define masculinity and confidence',
     cta: 'Explore',
     link: '/category/men',
-    image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&h=600&fit=crop',
+    image: '/image/blue-cloths.jpg',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const slides = [
     description: 'Curated perfume combos at unbeatable prices - Limited time offer!',
     cta: 'View Deals',
     link: '/category/combo',
-    image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&h=600&fit=crop',
+    image: '/image/blue-cloths.jpg',
   },
 ];
 
@@ -65,8 +65,8 @@ export default function Banner() {
                 {/* Content */}
                 <div className="space-y-6 animate-slideUp" data-aos="fade-right" data-aos-duration="800">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-md">
-                    <IconSparkles size={16} className="text-[var(--primary)]" />
-                    <span className="text-sm font-medium text-[var(--primary)]">
+                    <IconSparkles size={16} className="text-white" />
+                    <span className="text-sm font-medium text-white">
                       {slide.subtitle}
                     </span>
                   </div>
@@ -93,19 +93,19 @@ export default function Banner() {
                   <div className="flex flex-wrap gap-6 pt-4">
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 bg-[var(--gray-200)] rounded-full flex items-center justify-center">
-                        <span className="text-[var(--primary)] font-bold">✓</span>
+                        <span className="text-white font-bold">✓</span>
                       </div>
                       <span className="text-sm font-medium">100% Authentic</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 bg-[var(--gray-200)] rounded-full flex items-center justify-center">
-                        <span className="text-[var(--primary)] font-bold">✓</span>
+                        <span className="text-white font-bold">✓</span>
                       </div>
                       <span className="text-sm font-medium">Free Shipping</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-8 h-8 bg-[var(--gray-200)] rounded-full flex items-center justify-center">
-                        <span className="text-[var(--primary)] font-bold">✓</span>
+                        <span className="text-white font-bold">✓</span>
                       </div>
                       <span className="text-sm font-medium">Easy Returns</span>
                     </div>
@@ -136,7 +136,7 @@ export default function Banner() {
               onClick={() => goToSlide(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'w-8 bg-[var(--primary)]'
+                  ? 'w-8 bg-white text-black'
                   : 'w-2 bg-gray-300 hover:bg-gray-400'
               }`}
               aria-label={`Go to slide ${index + 1}`}
@@ -146,7 +146,7 @@ export default function Banner() {
       </div>
 
       {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-[var(--primary)] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-72 h-72 bg-white text-black opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--secondary)] opacity-5 rounded-full blur-3xl"></div>
 
       <style jsx>{`

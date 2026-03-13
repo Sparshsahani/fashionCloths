@@ -23,13 +23,13 @@ function ProductCard({ product }) {
     const { id, name, price, originalPrice, rating = 4.5, reviews = 0, image, badge, category } = product;
     const discount = originalPrice ? Math.round((originalPrice - price) / originalPrice * 100) : 0;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "group relative bg-[#1a1a1a] rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(193,154,107,0.2)]",
+        className: "group relative bg-zinc-900 border border-zinc-800 rounded-lg shadow-sm transition-all duration-300 overflow-hidden hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute top-0 left-0 w-full p-2 md:p-3 flex justify-between items-start z-20 pointer-events-none",
                 children: [
                     badge ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-[#D4C5AF] text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
+                        className: "bg-white text-black text-[9px] md:text-[10px] font-bold px-2 py-0.5 md:px-3 md:py-1 uppercase tracking-widest pointer-events-auto",
                         children: badge
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -57,7 +57,7 @@ function ProductCard({ product }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>setIsWishlisted(!isWishlisted),
-                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-[var(--primary)] backdrop-blur-sm transition-colors text-white hover:text-black",
+                                className: "w-7 h-7 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-black/20 hover:bg-white text-black backdrop-blur-sm transition-colors text-white hover:text-black",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHeart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHeart$3e$__["IconHeart"], {
                                     size: 14,
                                     className: `md:w-[16px] md:h-[16px] ${isWishlisted ? 'fill-black' : ''}`
@@ -90,7 +90,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-center bg-cover transition-transform duration-700 ease-out group-hover:scale-105",
                         style: {
-                            backgroundImage: `url(${image || 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800'})`
+                            backgroundImage: `url(${image || '/image/blue-cloths.jpg'})`
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -107,7 +107,7 @@ function ProductCard({ product }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-10 hidden md:block",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-[#D4C5AF] transition-colors",
+                            className: "w-full py-3 bg-white/95 backdrop-blur-md text-black text-sm font-bold uppercase tracking-wider hover:bg-white transition-colors",
                             children: "Quick View"
                         }, void 0, false, {
                             fileName: "[project]/components/common/ProductCard.js",
@@ -126,12 +126,12 @@ function ProductCard({ product }) {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-[#1a1a1a]",
+                className: "p-3 md:p-5 flex flex-col gap-2 md:gap-3 relative bg-zinc-900 border border-zinc-800",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
                             category && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-[9px] md:text-[10px] text-[#D4C5AF] font-bold uppercase tracking-widest mb-1",
+                                className: "text-[9px] md:text-[10px] text-white font-bold uppercase tracking-widest mb-1",
                                 children: category
                             }, void 0, false, {
                                 fileName: "[project]/components/common/ProductCard.js",
@@ -141,7 +141,7 @@ function ProductCard({ product }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: `/product/${id}`,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-[var(--primary)] transition-colors line-clamp-1",
+                                    className: "text-white text-base md:text-lg font-medium leading-snug hover:text-white transition-colors line-clamp-1",
                                     children: name
                                 }, void 0, false, {
                                     fileName: "[project]/components/common/ProductCard.js",
@@ -198,7 +198,7 @@ function ProductCard({ product }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                         size: 14,
-                                        className: "fill-[var(--primary)] text-[var(--primary)]"
+                                        className: "fill-[var(--primary)] text-white"
                                     }, void 0, false, {
                                         fileName: "[project]/components/common/ProductCard.js",
                                         lineNumber: 104,
@@ -225,7 +225,7 @@ function ProductCard({ product }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-[var(--primary)] hover:bg-[var(--white)] hover:text-black transition-all",
+                        className: "w-full mt-2 py-2 md:py-3 border border-white/20 text-white text-xs md:text-sm font-semibold uppercase tracking-wider hover:border-white hover:bg-[var(--white)] hover:text-black transition-all",
                         children: "Add to Cart"
                     }, void 0, false, {
                         fileName: "[project]/components/common/ProductCard.js",
@@ -280,10 +280,10 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-// Sample product data - Replace with actual API call based on ID
-const getProductById = (id)=>{
-    return {
-        id: id,
+// Sample products database
+const allProducts = {
+    1: {
+        id: 1,
         name: "Classic Denim Jacket",
         price: 2999,
         originalPrice: 3999,
@@ -291,43 +291,104 @@ const getProductById = (id)=>{
         reviews: 234,
         inStock: true,
         category: "Outerwear",
-        brand: "Zarnith Apparel",
+        brand: "Lucknow Chikan",
         description: "A timeless denim jacket crafted from premium denim. Perfect for layering and everyday style.",
-        fullDescription: `This classic denim jacket blends rugged durability with contemporary fit. Made from 100% cotton, it features a button‑front closure, chest pockets, and a slightly tailored silhouette.
-
-Ideal for casual outings and transitional weather, the jacket pairs effortlessly with tees and trousers. Its wash gives a vintage vibe while remaining soft and comfortable.
-
-Whether you’re heading out with friends or running errands, this jacket adds an instant edge to any outfit.`,
+        fullDescription: "This classic denim jacket blends rugged durability with contemporary fit.",
         features: [
             "100% premium cotton denim",
-            "Button‑front closure",
+            "Button-front closure",
             "Chest flap pockets",
-            "Machine washable",
-            "Modern tailored fit",
-            "Available in various washes"
+            "Machine washable"
         ],
         notes: {
             composition: [
-                "100% Cotton Outer",
-                "Soft Polyester Lining"
+                "100% Cotton Outer"
             ],
             care: [
-                "Machine wash cold",
-                "Do not bleach",
-                "Tumble dry low"
+                "Machine wash cold"
             ],
             fit: [
-                "Regular fit",
-                "True to size"
+                "Regular fit"
             ]
         },
         images: [
-            "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?w=800&h=800&fit=crop",
-            "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=800&fit=crop",
-            "https://images.unsplash.com/photo-1495105787522-5334e3fb0e66?w=800&h=800&fit=crop",
-            "https://images.unsplash.com/photo-1520975954732-57dd22299614?w=800&h=800&fit=crop"
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg"
         ]
-    };
+    },
+    2: {
+        id: 2,
+        name: "Floral Wrap Maxi Dress",
+        price: 2499,
+        originalPrice: 3499,
+        rating: 4.6,
+        reviews: 189,
+        inStock: true,
+        category: "Women's Clothing",
+        brand: "Lucknow Chikan",
+        description: "An elegant floral wrap maxi dress perfect for summer events.",
+        fullDescription: "This beautiful floral wrap dress features a flowing silhouette.",
+        features: [
+            "Lightweight floral fabric",
+            "Wrap-around tie closure",
+            "Maxi length"
+        ],
+        notes: {
+            composition: [
+                "100% Viscose"
+            ],
+            care: [
+                "Hand wash preferred"
+            ],
+            fit: [
+                "Relaxed wrap fit"
+            ]
+        },
+        images: [
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg"
+        ]
+    },
+    3: {
+        id: 3,
+        name: "Kids Printed Graphic Tee",
+        price: 799,
+        originalPrice: 1199,
+        rating: 4.4,
+        reviews: 156,
+        inStock: true,
+        category: "Kids Clothing",
+        brand: "Lucknow Chikan",
+        description: "Fun and vibrant graphic tee for kids.",
+        fullDescription: "This kids graphic tee is made from super soft cotton.",
+        features: [
+            "100% soft cotton",
+            "Fade-resistant print",
+            "Machine washable"
+        ],
+        notes: {
+            composition: [
+                "100% Cotton"
+            ],
+            care: [
+                "Machine wash warm"
+            ],
+            fit: [
+                "Regular kids fit"
+            ]
+        },
+        images: [
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg",
+            "/image/blue-cloths.jpg"
+        ]
+    }
+};
+const getProductById = (id)=>{
+    return allProducts[id] || allProducts[1];
 };
 // Related products
 const relatedProducts = [
@@ -338,7 +399,7 @@ const relatedProducts = [
         originalPrice: 3499,
         rating: 4.6,
         reviews: 189,
-        image: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&h=800&fit=crop",
+        image: "/image/blue-cloths.jpg",
         badge: "Bestseller",
         category: "Women's Clothing"
     },
@@ -349,7 +410,7 @@ const relatedProducts = [
         originalPrice: 1199,
         rating: 4.4,
         reviews: 156,
-        image: "https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?w=800&h=800&fit=crop",
+        image: "/image/blue-cloths.jpg",
         badge: "Sale",
         category: "Kids Clothing"
     },
@@ -360,7 +421,7 @@ const relatedProducts = [
         originalPrice: 4999,
         rating: 4.9,
         reviews: 312,
-        image: "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?w=800&h=800&fit=crop",
+        image: "/image/blue-cloths.jpg",
         badge: "Premium",
         category: "Women's Clothing"
     },
@@ -371,14 +432,15 @@ const relatedProducts = [
         originalPrice: null,
         rating: 4.5,
         reviews: 98,
-        image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=800&h=800&fit=crop",
+        image: "/image/blue-cloths.jpg",
         badge: null,
         category: "Men's Clothing"
     }
 ];
 function ProductDetailPage({ params }) {
     _s();
-    const product = getProductById(params.id);
+    const { id } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["use"])(params);
+    const product = getProductById(id);
     const [selectedImage, setSelectedImage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const [quantity, setQuantity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(1);
     const [isWishlisted, setIsWishlisted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -392,7 +454,7 @@ function ProductDetailPage({ params }) {
         className: "bg-black min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-[#1a1a1a] border-b border-white/10",
+                className: "bg-zinc-900 border border-zinc-800 border-b border-white/10",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4 py-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -400,11 +462,11 @@ function ProductDetailPage({ params }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: "text-gray-400 hover:text-[var(--primary)] transition-colors",
+                                className: "text-gray-400 hover:text-white transition-colors",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 131,
+                                lineNumber: 140,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -412,16 +474,16 @@ function ProductDetailPage({ params }) {
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 137,
+                                lineNumber: 146,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/products",
-                                className: "text-gray-400 hover:text-[var(--primary)] transition-colors",
+                                className: "text-gray-400 hover:text-white transition-colors",
                                 children: "Products"
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 138,
+                                lineNumber: 147,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -429,7 +491,7 @@ function ProductDetailPage({ params }) {
                                 children: "/"
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 144,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -437,23 +499,23 @@ function ProductDetailPage({ params }) {
                                 children: product.name
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 145,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/product/[id]/page.js",
-                        lineNumber: 130,
+                        lineNumber: 139,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/product/[id]/page.js",
-                    lineNumber: 129,
+                    lineNumber: 138,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/product/[id]/page.js",
-                lineNumber: 128,
+                lineNumber: 137,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -466,7 +528,7 @@ function ProductDetailPage({ params }) {
                                 className: "space-y-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative bg-[#1a1a1a] rounded-lg overflow-hidden aspect-square",
+                                        className: "relative bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden aspect-square",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: product.images[selectedImage],
@@ -474,7 +536,7 @@ function ProductDetailPage({ params }) {
                                                 className: "w-full h-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 157,
+                                                lineNumber: 166,
                                                 columnNumber: 15
                                             }, this),
                                             discount > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -486,43 +548,43 @@ function ProductDetailPage({ params }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 163,
+                                                lineNumber: 172,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 156,
+                                        lineNumber: 165,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid grid-cols-4 gap-3",
                                         children: product.images.map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>setSelectedImage(index),
-                                                className: `relative bg-[#1a1a1a] rounded-lg overflow-hidden aspect-square border-2 transition-all ${selectedImage === index ? "border-[var(--primary)]" : "border-transparent hover:border-white/20"}`,
+                                                className: `relative bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden aspect-square border-2 transition-all ${selectedImage === index ? "border-white" : "border-transparent hover:border-white/20"}`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                     src: image,
                                                     alt: `${product.name} ${index + 1}`,
                                                     className: "w-full h-full object-cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 181,
+                                                    lineNumber: 190,
                                                     columnNumber: 19
                                                 }, this)
                                             }, index, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 172,
+                                                lineNumber: 181,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 170,
+                                        lineNumber: 179,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 154,
+                                lineNumber: 163,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -532,11 +594,11 @@ function ProductDetailPage({ params }) {
                                         className: "flex items-center gap-3 text-sm",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-[var(--primary)] font-semibold uppercase tracking-wide",
+                                                className: "text-white font-semibold uppercase tracking-wide",
                                                 children: product.category
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 195,
+                                                lineNumber: 204,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -544,7 +606,7 @@ function ProductDetailPage({ params }) {
                                                 children: "|"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 198,
+                                                lineNumber: 207,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -552,13 +614,13 @@ function ProductDetailPage({ params }) {
                                                 children: product.brand
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 199,
+                                                lineNumber: 208,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 194,
+                                        lineNumber: 203,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -566,7 +628,7 @@ function ProductDetailPage({ params }) {
                                         children: product.name
                                     }, void 0, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 203,
+                                        lineNumber: 212,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -578,22 +640,22 @@ function ProductDetailPage({ params }) {
                                                     ...Array(5)
                                                 ].map((_, i)=>i < Math.floor(product.rating) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStarFilled$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStarFilled$3e$__["IconStarFilled"], {
                                                         size: 18,
-                                                        className: "text-[var(--primary)]"
+                                                        className: "text-white"
                                                     }, i, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 212,
+                                                        lineNumber: 221,
                                                         columnNumber: 21
                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconStar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconStar$3e$__["IconStar"], {
                                                         size: 18,
                                                         className: "text-gray-600"
                                                     }, i, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 218,
+                                                        lineNumber: 227,
                                                         columnNumber: 21
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 209,
+                                                lineNumber: 218,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -601,7 +663,7 @@ function ProductDetailPage({ params }) {
                                                 children: product.rating
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 222,
+                                                lineNumber: 231,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -613,27 +675,27 @@ function ProductDetailPage({ params }) {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 223,
+                                                lineNumber: 232,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 208,
+                                        lineNumber: 217,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-baseline gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-4xl font-bold text-[var(--primary)]",
+                                                className: "text-4xl font-bold text-white",
                                                 children: [
                                                     "₹",
                                                     product.price
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 230,
+                                                lineNumber: 239,
                                                 columnNumber: 15
                                             }, this),
                                             product.originalPrice && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -646,7 +708,7 @@ function ProductDetailPage({ params }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 235,
+                                                        lineNumber: 244,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -657,7 +719,7 @@ function ProductDetailPage({ params }) {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 238,
+                                                        lineNumber: 247,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
@@ -665,7 +727,7 @@ function ProductDetailPage({ params }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 229,
+                                        lineNumber: 238,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -676,14 +738,14 @@ function ProductDetailPage({ params }) {
                                                     className: "w-2 h-2 bg-green-500 rounded-full"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 249,
+                                                    lineNumber: 258,
                                                     columnNumber: 19
                                                 }, this),
                                                 "In Stock"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/product/[id]/page.js",
-                                            lineNumber: 248,
+                                            lineNumber: 257,
                                             columnNumber: 17
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-red-500 font-semibold flex items-center gap-2",
@@ -692,19 +754,19 @@ function ProductDetailPage({ params }) {
                                                     className: "w-2 h-2 bg-red-500 rounded-full"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 254,
+                                                    lineNumber: 263,
                                                     columnNumber: 19
                                                 }, this),
                                                 "Out of Stock"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/product/[id]/page.js",
-                                            lineNumber: 253,
+                                            lineNumber: 262,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 246,
+                                        lineNumber: 255,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -712,7 +774,7 @@ function ProductDetailPage({ params }) {
                                         children: product.description
                                     }, void 0, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 261,
+                                        lineNumber: 270,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -723,7 +785,7 @@ function ProductDetailPage({ params }) {
                                                 children: "Quantity"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 267,
+                                                lineNumber: 276,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -733,31 +795,8 @@ function ProductDetailPage({ params }) {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                             onClick: decreaseQuantity,
-                                                            className: "px-4 py-3 bg-[#1a1a1a] text-white hover:bg-[var(--primary)] hover:text-black transition-colors",
+                                                            className: "px-4 py-3 bg-zinc-900 border border-zinc-800 text-white hover:bg-white text-black hover:text-black transition-colors",
                                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconMinus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconMinus$3e$__["IconMinus"], {
-                                                                size: 18
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 274,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/product/[id]/page.js",
-                                                            lineNumber: 270,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "px-6 py-3 bg-black text-white font-semibold",
-                                                            children: quantity
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/product/[id]/page.js",
-                                                            lineNumber: 276,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            onClick: increaseQuantity,
-                                                            className: "px-4 py-3 bg-[#1a1a1a] text-white hover:bg-[var(--primary)] hover:text-black transition-colors",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlus$3e$__["IconPlus"], {
                                                                 size: 18
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
@@ -768,78 +807,101 @@ function ProductDetailPage({ params }) {
                                                             fileName: "[project]/app/product/[id]/page.js",
                                                             lineNumber: 279,
                                                             columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "px-6 py-3 bg-black text-white font-semibold",
+                                                            children: quantity
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/product/[id]/page.js",
+                                                            lineNumber: 285,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            onClick: increaseQuantity,
+                                                            className: "px-4 py-3 bg-zinc-900 border border-zinc-800 text-white hover:bg-white text-black hover:text-black transition-colors",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconPlus$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconPlus$3e$__["IconPlus"], {
+                                                                size: 18
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/product/[id]/page.js",
+                                                                lineNumber: 292,
+                                                                columnNumber: 21
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/product/[id]/page.js",
+                                                            lineNumber: 288,
+                                                            columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 269,
+                                                    lineNumber: 278,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 268,
+                                                lineNumber: 277,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 266,
+                                        lineNumber: 275,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                className: "flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-[var(--primary)] text-black font-bold rounded-lg hover:bg-[var(--primary)]/90 transition-all",
+                                                className: "flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white text-black text-black font-bold rounded-lg hover:bg-gray-200 transition-all",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShoppingCart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShoppingCart$3e$__["IconShoppingCart"], {
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 292,
+                                                        lineNumber: 301,
                                                         columnNumber: 17
                                                     }, this),
                                                     "Add to Cart"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 291,
+                                                lineNumber: 300,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>setIsWishlisted(!isWishlisted),
-                                                className: `px-4 py-4 border rounded-lg transition-all ${isWishlisted ? "bg-[var(--primary)] border-[var(--primary)] text-black" : "border-white/20 text-white hover:border-[var(--primary)]"}`,
+                                                className: `px-4 py-4 border rounded-lg transition-all ${isWishlisted ? "bg-white text-black border-white text-black" : "border-white/20 text-white hover:border-white"}`,
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconHeart$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconHeart$3e$__["IconHeart"], {
                                                     size: 20,
                                                     className: isWishlisted ? "fill-black" : ""
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 303,
+                                                    lineNumber: 312,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 295,
+                                                lineNumber: 304,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 290,
+                                        lineNumber: 299,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid grid-cols-1 md:grid-cols-3 gap-4 pt-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-start gap-3 p-4 bg-[#1a1a1a] rounded-lg",
+                                                className: "flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconTruck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconTruck$3e$__["IconTruck"], {
                                                         size: 24,
                                                         className: "text-[var(--white)] flex-shrink-0 mt-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 313,
+                                                        lineNumber: 322,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -849,7 +911,7 @@ function ProductDetailPage({ params }) {
                                                                 children: "Free Delivery"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 318,
+                                                                lineNumber: 327,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -857,30 +919,30 @@ function ProductDetailPage({ params }) {
                                                                 children: "On orders above ₹999"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 321,
+                                                                lineNumber: 330,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 317,
+                                                        lineNumber: 326,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 312,
+                                                lineNumber: 321,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-start gap-3 p-4 bg-[#1a1a1a] rounded-lg",
+                                                className: "flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconShieldCheck$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconShieldCheck$3e$__["IconShieldCheck"], {
                                                         size: 24,
                                                         className: "text-[var(--white)] flex-shrink-0 mt-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 325,
+                                                        lineNumber: 334,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -890,7 +952,7 @@ function ProductDetailPage({ params }) {
                                                                 children: "Authentic"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 330,
+                                                                lineNumber: 339,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -898,30 +960,30 @@ function ProductDetailPage({ params }) {
                                                                 children: "100% genuine products"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 331,
+                                                                lineNumber: 340,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 329,
+                                                        lineNumber: 338,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 324,
+                                                lineNumber: 333,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex items-start gap-3 p-4 bg-[#1a1a1a] rounded-lg",
+                                                className: "flex items-start gap-3 p-4 bg-zinc-900 border border-zinc-800 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$tabler$2b$icons$2d$react$40$3$2e$40$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f40$tabler$2f$icons$2d$react$2f$dist$2f$esm$2f$icons$2f$IconRefresh$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__IconRefresh$3e$__["IconRefresh"], {
                                                         size: 24,
                                                         className: "text-[var(--white)] flex-shrink-0 mt-1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 335,
+                                                        lineNumber: 344,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -931,7 +993,7 @@ function ProductDetailPage({ params }) {
                                                                 children: "Easy Returns"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 340,
+                                                                lineNumber: 349,
                                                                 columnNumber: 19
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -939,37 +1001,37 @@ function ProductDetailPage({ params }) {
                                                                 children: "7-day return policy"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 343,
+                                                                lineNumber: 352,
                                                                 columnNumber: 19
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 339,
+                                                        lineNumber: 348,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 334,
+                                                lineNumber: 343,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 311,
+                                        lineNumber: 320,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 192,
+                                lineNumber: 201,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/product/[id]/page.js",
-                        lineNumber: 152,
+                        lineNumber: 161,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -980,64 +1042,64 @@ function ProductDetailPage({ params }) {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveTab("description"),
-                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "description" ? "text-[var(--primary)]" : "text-gray-400 hover:text-white"}`,
+                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "description" ? "text-white" : "text-gray-400 hover:text-white"}`,
                                         children: [
                                             "Description",
                                             activeTab === "description" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--primary)]"
+                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 364,
+                                                lineNumber: 373,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 354,
+                                        lineNumber: 363,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveTab("notes"),
-                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "notes" ? "text-[var(--primary)]" : "text-gray-400 hover:text-white"}`,
+                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "notes" ? "text-white" : "text-gray-400 hover:text-white"}`,
                                         children: [
                                             "Fabric Details",
                                             activeTab === "notes" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--primary)]"
+                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 377,
+                                                lineNumber: 386,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 367,
+                                        lineNumber: 376,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         onClick: ()=>setActiveTab("reviews"),
-                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "reviews" ? "text-[var(--primary)]" : "text-gray-400 hover:text-white"}`,
+                                        className: `pb-4 font-semibold transition-colors relative ${activeTab === "reviews" ? "text-white" : "text-gray-400 hover:text-white"}`,
                                         children: [
                                             "Reviews (",
                                             product.reviews,
                                             ")",
                                             activeTab === "reviews" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-[var(--primary)]"
+                                                className: "absolute bottom-0 left-0 right-0 h-0.5 bg-white text-black"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 390,
+                                                lineNumber: 399,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 380,
+                                        lineNumber: 389,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 353,
+                                lineNumber: 362,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1053,12 +1115,12 @@ function ProductDetailPage({ params }) {
                                                     children: product.fullDescription
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/product/[id]/page.js",
-                                                    lineNumber: 400,
+                                                    lineNumber: 409,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 399,
+                                                lineNumber: 408,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1069,7 +1131,7 @@ function ProductDetailPage({ params }) {
                                                         children: "Key Features"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 405,
+                                                        lineNumber: 414,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1078,48 +1140,48 @@ function ProductDetailPage({ params }) {
                                                                 className: "flex items-center gap-3 text-gray-300",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "w-1.5 h-1.5 bg-[var(--primary)] rounded-full"
+                                                                        className: "w-1.5 h-1.5 bg-white text-black rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                                        lineNumber: 414,
+                                                                        lineNumber: 423,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     feature
                                                                 ]
                                                             }, index, true, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 410,
+                                                                lineNumber: 419,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 408,
+                                                        lineNumber: 417,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 404,
+                                                lineNumber: 413,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 398,
+                                        lineNumber: 407,
                                         columnNumber: 15
                                     }, this),
                                     activeTab === "notes" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid grid-cols-1 md:grid-cols-3 gap-6",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-[#1a1a1a] p-6 rounded-lg",
+                                                className: "bg-zinc-900 border border-zinc-800 p-6 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-[var(--primary)] font-bold mb-4",
+                                                        className: "text-white font-bold mb-4",
                                                         children: "Compositions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 426,
+                                                        lineNumber: 435,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1128,39 +1190,39 @@ function ProductDetailPage({ params }) {
                                                                 className: "text-gray-300 flex items-center gap-2",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "w-1.5 h-1.5 bg-[var(--primary)] rounded-full"
+                                                                        className: "w-1.5 h-1.5 bg-white text-black rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                                        lineNumber: 435,
+                                                                        lineNumber: 444,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     note
                                                                 ]
                                                             }, index, true, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 431,
+                                                                lineNumber: 440,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 429,
+                                                        lineNumber: 438,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 425,
+                                                lineNumber: 434,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-[#1a1a1a] p-6 rounded-lg",
+                                                className: "bg-zinc-900 border border-zinc-800 p-6 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-[var(--primary)] font-bold mb-4",
+                                                        className: "text-white font-bold mb-4",
                                                         children: "Care Instructions"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 442,
+                                                        lineNumber: 451,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1169,39 +1231,39 @@ function ProductDetailPage({ params }) {
                                                                 className: "text-gray-300 flex items-center gap-2",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "w-1.5 h-1.5 bg-[var(--primary)] rounded-full"
+                                                                        className: "w-1.5 h-1.5 bg-white text-black rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                                        lineNumber: 451,
+                                                                        lineNumber: 460,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     note
                                                                 ]
                                                             }, index, true, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 447,
+                                                                lineNumber: 456,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 445,
+                                                        lineNumber: 454,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 441,
+                                                lineNumber: 450,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "bg-[#1a1a1a] p-6 rounded-lg",
+                                                className: "bg-zinc-900 border border-zinc-800 p-6 rounded-lg",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "text-[var(--primary)] font-bold mb-4",
+                                                        className: "text-white font-bold mb-4",
                                                         children: "Fit & Sizing"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 458,
+                                                        lineNumber: 467,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1210,34 +1272,34 @@ function ProductDetailPage({ params }) {
                                                                 className: "text-gray-300 flex items-center gap-2",
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "w-1.5 h-1.5 bg-[var(--primary)] rounded-full"
+                                                                        className: "w-1.5 h-1.5 bg-white text-black rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                                        lineNumber: 467,
+                                                                        lineNumber: 476,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     note
                                                                 ]
                                                             }, index, true, {
                                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                                lineNumber: 463,
+                                                                lineNumber: 472,
                                                                 columnNumber: 23
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/product/[id]/page.js",
-                                                        lineNumber: 461,
+                                                        lineNumber: 470,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 457,
+                                                lineNumber: 466,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 424,
+                                        lineNumber: 433,
                                         columnNumber: 15
                                     }, this),
                                     activeTab === "reviews" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1249,29 +1311,29 @@ function ProductDetailPage({ params }) {
                                                 children: "Customer reviews feature coming soon!"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/product/[id]/page.js",
-                                                lineNumber: 479,
+                                                lineNumber: 488,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/product/[id]/page.js",
-                                            lineNumber: 478,
+                                            lineNumber: 487,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 477,
+                                        lineNumber: 486,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 396,
+                                lineNumber: 405,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/product/[id]/page.js",
-                        lineNumber: 351,
+                        lineNumber: 360,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1282,7 +1344,7 @@ function ProductDetailPage({ params }) {
                                 children: "You May Also Like"
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 490,
+                                lineNumber: 499,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$6_$40$babel$2b$core$40$7$2e$2_de68e8e93aa421514965ddcf009bccaf$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1291,30 +1353,30 @@ function ProductDetailPage({ params }) {
                                         product: relatedProduct
                                     }, relatedProduct.id, false, {
                                         fileName: "[project]/app/product/[id]/page.js",
-                                        lineNumber: 495,
+                                        lineNumber: 504,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/product/[id]/page.js",
-                                lineNumber: 493,
+                                lineNumber: 502,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/product/[id]/page.js",
-                        lineNumber: 489,
+                        lineNumber: 498,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/product/[id]/page.js",
-                lineNumber: 151,
+                lineNumber: 160,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/product/[id]/page.js",
-        lineNumber: 126,
+        lineNumber: 135,
         columnNumber: 5
     }, this);
 }

@@ -8,7 +8,7 @@ const categories = [
   {
     id: 1,
     name: "Men's Clothing",
-    image: 'https://source.unsplash.com/800x800/?fashion,men',
+    image: '/image/blue-cloths.jpg',
     description: 'Stylish apparel for him',
     productCount: 120,
     link: '/product/1',
@@ -16,7 +16,7 @@ const categories = [
   {
     id: 2,
     name: "Women's Clothing",
-    image: 'https://source.unsplash.com/800x800/?fashion,women',
+    image: '/image/blue-cloths.jpg',
     description: 'Elegant outfits for her',
     productCount: 98,
     link: '/product/2',
@@ -24,7 +24,7 @@ const categories = [
   {
     id: 3,
     name: 'Kids Clothing',
-    image: 'https://source.unsplash.com/800x800/?fashion,kids',
+    image: '/image/blue-cloths.jpg',
     description: 'Fun and comfy wear for children',
     productCount: 75,
     link: '/product/3',
@@ -32,7 +32,7 @@ const categories = [
   {
     id: 4,
     name: 'Accessories',
-    image: 'https://source.unsplash.com/800x800/?fashion,accessories',
+    image: '/image/blue-cloths.jpg',
     description: 'Belts, hats, scarves and more',
     productCount: 64,
     link: '/product/4',
@@ -40,7 +40,7 @@ const categories = [
   {
     id: 5,
     name: 'Formal Wear',
-    image: 'https://source.unsplash.com/800x800/?formal,attire',
+    image: '/image/blue-cloths.jpg',
     description: 'Suits and dresses for special occasions',
     productCount: 58,
     link: '/product/5',
@@ -48,7 +48,7 @@ const categories = [
   {
     id: 6,
     name: 'Casual Wear',
-    image: 'https://source.unsplash.com/800x800/?casual,fashion',
+    image: '/image/blue-cloths.jpg',
     description: 'Everyday comfortable outfits',
     productCount: 176,
     link: '/product/6',
@@ -56,7 +56,7 @@ const categories = [
   {
     id: 7,
     name: 'Ethnic Wear',
-    image: 'https://source.unsplash.com/800x800/?ethnic,fashion',
+    image: '/image/blue-cloths.jpg',
     description: 'Traditional and cultural styles',
     productCount: 82,
     link: '/product/7',
@@ -64,7 +64,7 @@ const categories = [
   {
     id: 8,
     name: 'Outerwear',
-    image: 'https://source.unsplash.com/800x800/?outerwear,fashion',
+    image: '/image/blue-cloths.jpg',
     description: 'Jackets, coats and warm layers',
     productCount: 47,
     link: '/product/8',
@@ -72,7 +72,7 @@ const categories = [
   {
     id: 9,
     name: 'Loungewear',
-    image: 'https://source.unsplash.com/800x800/?loungewear,fashion',
+    image: '/image/blue-cloths.jpg',
     description: 'Relaxed clothing for home',
     productCount: 53,
     link: '/product/9',

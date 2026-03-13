@@ -226,27 +226,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$home$2f$Newsle
 ;
 ;
 const metadata = {
-    title: "Zarnith - Premium Perfumes & Fragrances | Luxury Scents Online",
-    description: "Discover premium perfumes, agarbatti, loban, and car fragrances at Zarnith. Shop authentic men's, women's, and unisex perfumes with free shipping on orders above ₹999.",
-    keywords: "perfumes, fragrances, agarbatti, loban, car perfume, men perfume, women perfume, unisex perfume, luxury scents, premium fragrances",
+    title: "Lucknow Chikan",
+    description: "Discover premium authentic Lucknow Chikan embroidered clothing and traditional chikankari wear.",
+    keywords: "lucknow chikan, chikankari, kurtas, traditional wear, ethnic wear, embroidery",
     authors: [
         {
-            name: "Zarnith"
+            name: "Lucknow Chikan"
         }
     ],
-    creator: "Zarnith",
-    publisher: "Zarnith",
+    creator: "Lucknow Chikan",
+    publisher: "Lucknow Chikan",
     openGraph: {
-        title: "Zarnith - Premium Perfumes & Fragrances",
-        description: "Shop authentic premium perfumes and fragrances online",
+        title: "Lucknow Chikan",
+        description: "Shop authentic premium Lucknow Chikan embroidered clothing online",
         type: "website",
         locale: "en_IN",
-        siteName: "Zarnith"
+        siteName: "Lucknow Chikan"
     },
     twitter: {
         card: "summary_large_image",
-        title: "Zarnith - Premium Perfumes & Fragrances",
-        description: "Shop authentic premium perfumes and fragrances online"
+        title: "Lucknow Chikan",
+        description: "Shop authentic premium Lucknow Chikan embroidered clothing online"
     },
     robots: {
         index: true,
