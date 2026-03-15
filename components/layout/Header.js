@@ -83,8 +83,8 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 gap-8">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-20 h-20 rounded-xl overflow-hidden  group-hover:scale-110 transition-transform duration-300">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+              <div className="w-28 md:w-40 h-auto transition-transform duration-300 group-hover:scale-105">
+                <img src="/logo.png" alt="Logo" className="w-full h-auto object-contain" />
               </div>
               {/* text removed, logo only header */}
             </Link>
@@ -185,8 +185,8 @@ export default function Header() {
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-white/10 bg-black/60 backdrop-blur-md">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl overflow-hidden shadow-xl">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+              <div className="w-24 h-auto shadow-xl">
+                <img src="/logo.png" alt="Logo" className="w-full h-auto object-contain" />
               </div>
               {/* logo only */}
             </div>

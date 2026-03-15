@@ -22,9 +22,10 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Brand Section */}
             <div data-aos="fade-up" data-aos-delay="0">
-              <div className="flex items-center gap-3 mb-4">
-                {/* logo image placed in public folder */}
-                <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
+              <div className="flex items-center gap-3 mb-6">
+                <Link href="/" className="inline-block w-48 h-auto">
+                  <img src="/logo.png" alt="Logo" className="w-full h-auto object-contain" />
+                </Link>
               </div>
               <p className="text-gray-400 mb-4 leading-relaxed">
                 Your destination for premium apparel and timeless style. Discover
