@@ -90,7 +90,7 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden text-black lg:flex items-center gap-10">
+            <nav className="hidden  text-black lg:flex items-center gap-10">
               <Link href="/" className="nav-link">
                 Home
               </Link>
