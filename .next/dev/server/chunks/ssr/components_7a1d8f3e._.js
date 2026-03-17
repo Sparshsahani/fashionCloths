@@ -24,7 +24,7 @@ const slides = [
         subtitle: "Premium Clothing Collection",
         description: "Experience the epitome of style with our handcrafted garments",
         link: "/category/all",
-        image: "/image/blue-cloths.jpg",
+        image: "/image/img-1.jpg",
         tag: "New Arrival"
     },
     {
@@ -33,7 +33,7 @@ const slides = [
         subtitle: "Men's Apparel",
         description: "Commanding outfits that define modern masculinity",
         link: "/category/men",
-        image: "/image/blue-cloths.jpg",
+        image: "/image/img-2.jpg",
         tag: "Best Seller"
     },
     {
@@ -42,7 +42,7 @@ const slides = [
         subtitle: "Exclusive Combo Sets",
         description: "Curated clothing collections at extraordinary prices - While stocks last",
         link: "/category/combo",
-        image: "/image/blue-cloths.jpg",
+        image: "/image/img-3.jpg",
         tag: "Save 40%"
     }
 ];
